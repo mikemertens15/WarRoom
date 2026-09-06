@@ -69,11 +69,18 @@ export interface Snapshot {
   picks: (string | null)[];
   cursor: number;
 }
-/** Persisted schema 1. Picks/cursor use zero-based indexes; cursor 108 is complete.
+/** A keeper costs this team's pick in the original one-based round, under NEW order. */
+export interface Keeper {
+  team: number;
+  playerId: string;
+  round: number;
+}
+/** Persisted schema 2. Picks/cursor use zero-based indexes; cursor 108 is complete.
  * History stores pick actions only. Rosters must be derived, never duplicated here.
  */
 export interface DraftState extends Snapshot {
-  version: 1;
+  version: 2;
+  keepers: Keeper[];
   league: League;
   players: Player[];
   started: boolean;
@@ -101,9 +108,12 @@ export interface ValuedPlayer extends Player {
   depthValue: number;
 }
 /** Derived and ephemeral. survival is a 0–1 heuristic, score is a model score,
- * alternative is a display name, and alternativeValue is expected league value.
+ * alternative is a display name, and alternativeValue is expected marginal roster gain.
  */
 export interface Recommendation extends ValuedPlayer {
+  rosterGain: number;
+  starterGain: number;
+  benchGain: number;
   survival: number;
   score: number;
   fit: number;

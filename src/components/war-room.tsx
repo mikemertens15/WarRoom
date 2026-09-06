@@ -28,6 +28,7 @@ import {
 import { MODEL } from "@/lib/config";
 import {
   counts,
+  configureDraft,
   needs,
   newDraft,
   nextPick,
@@ -63,6 +64,7 @@ import Setup from "./setup";
 import DraftBoard from "./draft-board";
 import EditPick from "./edit-pick";
 import ReleaseInfo from "./release-info";
+import PickPlanner, { OpponentLearning } from "./pick-planner";
 
 type View = "room" | "board" | "model";
 
@@ -119,7 +121,7 @@ export default function WarRoom() {
             ? "Current 2026 data installed. Your team names, draft order and scoring were preserved."
             : loaded.recovered
               ? "Recovered the previous valid save. Check the last pick before continuing."
-              : `Draft restored · ${s.picks.filter(Boolean).length} picks recorded. You’re ready to continue.`,
+              : `Draft restored · ${s.picks.filter(Boolean).length} slots filled, including ${s.keepers.length} keepers. You’re ready to continue.`,
         );
     } catch (e) {
       setError((e as Error).message);
@@ -591,7 +593,11 @@ export default function WarRoom() {
               </strong>
             </div>
             <div className="progress-box">
-              <span>{completed} of 108 recorded</span>
+              <span>{completed} of 108 filled</span>
+              <small>
+                {state.keepers.length} keepers ·{" "}
+                {completed - state.keepers.length} live picks
+              </small>
               <div className="track">
                 <i style={{ width: `${(completed / 108) * 100}%` }} />
               </div>
@@ -849,9 +855,8 @@ export default function WarRoom() {
                       </div>
                     </div>
                     <p className="rec-reason">
-                      {top.peers === 0
-                        ? "Last player in his tier. "
-                        : `${fmt(top.vor)} points above replacement. `}
+                      +{fmt(top.rosterGain)} projected roster value.{" "}
+                      {top.peers === 0 ? "Last player in his tier. " : ""}
                       {model.window.target === null
                         ? "No later turn remains. Fill your final roster needs."
                         : model.window.selections === 0
@@ -878,6 +883,7 @@ export default function WarRoom() {
                     </div>
                   </section>
                 )}
+                <PickPlanner state={state} model={model} />
                 <section className="panel available-panel">
                   <div className="panel-heading">
                     <h2>
@@ -1150,6 +1156,7 @@ export default function WarRoom() {
               </div>
               <div className="model-explanation">
                 <h3>A six-team baseline. A next-turn decision.</h3>
+                <OpponentLearning state={state} model={model} />
                 <p>
                   First reserve 12 RB and 12 WR starters, then allocate 12 FLEX
                   slots to the highest projected remaining RB/WR players. Use
@@ -1178,11 +1185,15 @@ export default function WarRoom() {
                   Value includes positive starter VOR plus{" "}
                   {MODEL.depthWeight * 100}% of value above the projected bench
                   cutoff (one QB, three RBs, three WRs and one TE per team).
-                  Recommendation = value × roster fit + expected loss from
+                  Recommendation = marginal roster gain + expected loss from
                   waiting + tier cliff + roster need + upside − risk. The
                   forecast distributes each opponent pick across available
-                  players using ADP/model rank and positional demand. Aggregate
-                  projections are never silently rescored.
+                  players using ADP/model rank, positional demand and bounded
+                  learned preferences. Roster gain measures the change in
+                  starter value plus bench depth; successive same-position
+                  reserves earn
+                  {MODEL.benchDecay * 100}% of the preceding reserve’s weight.
+                  Aggregate projections are never silently rescored.
                 </p>
               </div>
               <div className="table-scroll">
@@ -1196,7 +1207,7 @@ export default function WarRoom() {
                         "ADP",
                         "BASELINE",
                         "VOR",
-                        "FIT",
+                        "ROSTER GAIN",
                         "TIER +",
                         "URGENCY +",
                         "NEED +",
@@ -1230,7 +1241,7 @@ export default function WarRoom() {
                           p.adp,
                           p.baseline,
                           p.vor,
-                          p.fit,
+                          p.rosterGain,
                           p.tierAdjustment,
                           p.urgency,
                           p.need,
@@ -1273,28 +1284,41 @@ export default function WarRoom() {
         <Setup
           state={state}
           onClose={() => setSetup(false)}
-          onSave={(league, players) => {
-            if (
-              commit(
-                { ...state, league, players, started: true },
-                state.started
-                  ? "League settings saved."
-                  : "Draft started. Search a player and press Enter to record the first pick.",
-              )
-            ) {
+          onSave={(league, players, keepers, start) => {
+            try {
+              if (
+                commit(
+                  configureDraft(
+                    live.current!,
+                    league,
+                    players,
+                    keepers,
+                    start,
+                  ),
+                  !start && !state.started
+                    ? "Preparation saved. Keepers and draft order are ready to review."
+                    : state.started
+                      ? "League settings saved."
+                      : "Draft started. Search a player and press Enter to record the first pick.",
+                )
+              ) {
+                setSetup(false);
+                setTimeout(() => input.current?.focus(), 0);
+              }
+            } catch (e) {
+              setError((e as Error).message);
               setSetup(false);
-              setTimeout(() => input.current?.focus(), 0);
             }
           }}
           onReset={() => {
             if (
               confirm(
-                "Start a new draft and erase all current picks? Export a JSON backup first if you want to keep this draft.",
+                "Clear all live picks and undo history? Your keeper reservations and player data will stay. Export a JSON backup first if you want to keep this draft.",
               )
             ) {
               if (
                 commit(
-                  newDraft(state.league, state.players),
+                  newDraft(state.league, state.players, state.keepers),
                   "New draft created. Check the order before starting.",
                 )
               )
@@ -1343,7 +1367,10 @@ export default function WarRoom() {
               ["Bench baseline", fmt(why.benchBaseline)],
               ["Depth value (included)", fmt(why.depthValue)],
               ["League player value", fmt(why.value)],
-              ["Roster multiplier", `${why.fit}×`],
+              ["Starter improvement", fmt(why.starterGain)],
+              ["Bench improvement", fmt(why.benchGain)],
+              ["Total roster gain", fmt(why.rosterGain)],
+              ["Gain/value ratio (tier & upside)", fmt(why.fit)],
               ["Tier adjustment", `+${fmt(why.tierAdjustment)}`],
               ["Next-turn urgency", `+${fmt(why.urgency)}`],
               ["Positional need", `+${fmt(why.need)}`],

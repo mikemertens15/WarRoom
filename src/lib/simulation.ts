@@ -8,7 +8,7 @@ import {
   snakeOrder,
 } from "./draft";
 import { recommend } from "./engine";
-import type { DraftState, Player } from "./types";
+import type { DraftState, Keeper, Player } from "./types";
 /** Local deterministic PRNG for repeatable opponent choices, not security use. */
 export function seededRandom(seed: number) {
   return () => {
@@ -27,6 +27,7 @@ export function simulateDraft(
   seat: number,
   seed = 42,
   players?: Player[],
+  keepers: Keeper[] = [],
 ): {
   state: DraftState;
   userSelections: number;
@@ -34,7 +35,7 @@ export function simulateDraft(
 } {
   const league = defaultLeague();
   league.myTeam = seat;
-  let state = { ...newDraft(league, players), started: true };
+  let state = { ...newDraft(league, players, keepers), started: true };
   const order = snakeOrder(league.order);
   const random = seededRandom(seed);
   let userSelections = 0;

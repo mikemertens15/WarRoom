@@ -50,6 +50,6 @@ Stop the local server before replacing its production build; reopen with `npm ru
 
 Inspect with `npx vercel inspect <deployment-url>`. Review build logs before retrying failures. For a regression, `npx vercel rollback <known-good-deployment-url>` can restore an earlier deployment where supported by the account's plan/settings. Alternatively redeploy a reviewed known-good source revision. Never guess a prior deployment ID.
 
-Application rollback does not roll back browser saves. Export before trying a rollback on a real draft. This release keeps schema 1; future changes need migration/recovery documentation and fixtures before publication.
+Application rollback does not roll back browser saves. Export before trying a rollback on a real draft. Release 1.2.0 reads format 1 and writes format 2 with keeper assignments. Earlier app releases cannot open format-2 saves. Keep a pre-upgrade export if backward compatibility is needed; do not remove the keeper field or relabel the format to force a restore. Migration/recovery tests must pass before publication.
 
 There is no automatic error monitoring or log drain. Current post-deploy checks are explicit: build status, browser/runtime errors and saved-state smoke flow. Add ongoing monitoring when season-management requirements warrant it.

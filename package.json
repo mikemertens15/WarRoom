@@ -1,6 +1,6 @@
 {
   "name": "draft-war-room",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Local-first six-team fantasy football draft command center",
   "scripts": {
     "test": "tsx --test tests/*.test.ts",

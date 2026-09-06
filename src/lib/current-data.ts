@@ -64,6 +64,10 @@ export function applyCurrentData(state: DraftState): DraftState {
     players,
     league: { ...state.league, datasetLabel: CURRENT_DATA.label },
     picks: remap(state.picks),
+    keepers: state.keepers.map((k) => ({
+      ...k,
+      playerId: mapping.get(k.playerId)!,
+    })),
     history: state.history.map((h) => ({ ...h, picks: remap(h.picks) })),
   };
 }

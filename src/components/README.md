@@ -7,3 +7,5 @@
 `ui.tsx` contains the dialog's keyboard/focus handling, local file download helper and small presentation utilities. Keep shortcuts inactive while a dialog is open. `release-info.tsx` renders the current version chip and release ledger without reading or writing draft storage.
 
 Layout styles are in `src/app/globals.css`. Check the room, setup, release log, export and board at desktop and 390px mobile widths after layout changes. The version chip must remain discoverable on mobile. Data transfer instructions belong near export/restore because that is where the user changes devices.
+
+`keeper-editor.tsx` edits optional pre-draft reservations within Setup’s local preview. Save preparation persists without starting. `pick-planner.tsx` calculates read-only scenario comparisons only while expanded, and shows reconstructable opponent factors in Model lab. Keeper board cells stay readable but cannot be edited as live picks.

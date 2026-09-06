@@ -261,7 +261,7 @@ test("recommendations explain finite quantitative components", () => {
     assert(
       Math.abs(
         p.score -
-          (p.value * p.fit +
+          (p.rosterGain +
             p.urgency +
             p.tierAdjustment +
             p.need +

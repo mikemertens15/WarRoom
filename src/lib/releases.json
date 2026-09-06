@@ -1,5 +1,19 @@
 [
   {
+    "version": "1.2.0",
+    "date": "2026-09-06",
+    "title": "Keepers and two-pick strategy",
+    "summary": "Prepare keeper choices before the order draw, then draft with roster-specific gains and clearer comparisons across your next two picks.",
+    "changes": [
+      "Added up to two optional keepers per team, charged to last season’s round at the team’s new draft position.",
+      "Added Save preparation, automatic keeper reservations, protected board cells and keeper-aware rosters, forecasts, exports and recovery.",
+      "Replaced fixed backup multipliers with marginal starting-lineup improvement and diminishing bench value above the deep-pool cutoff.",
+      "Added deterministic two-pick scenarios, comparative ranges and bounded learning from opponents’ live choices.",
+      "Added format-1 save migration, full keeper-draft simulations and desktop/mobile workflow tests."
+    ],
+    "compatibility": "Reads older format-1 saves without losing picks or undo; new saves use format 2 and require app 1.2.0 or newer. Browser-local storage and manual JSON transfer remain unchanged."
+  },
+  {
     "version": "1.1.0",
     "date": "2026-09-06",
     "title": "Release tracking and device access",

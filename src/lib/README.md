@@ -14,6 +14,7 @@ This directory holds provider-neutral types and draft calculations. Modules retu
 | `export.ts` | Human-readable rosters and spreadsheet-safe CSV; full backup JSON is serialized by the UI |
 | `sample.ts` | Explicit synthetic practice/test pool, never real rankings |
 | `simulation.ts` | Seeded complete-draft sanity harness |
-| `releases.json` | Newest-first application release ledger; unrelated to save schema 1 |
+| `planner.ts` | Deterministic conditional two-pick comparison; roster utility ranges, no saved state |
+| `releases.json` | Newest-first application release ledger; independent of draft save schema 2 |
 
 See [architecture](../../docs/ARCHITECTURE.md), [scoring/model formulas](../../README.md#how-the-recommendation-works) and [data provenance](../../docs/DATA.md). Do not store competing roster state or mix weekly-management transactions into draft pick history.

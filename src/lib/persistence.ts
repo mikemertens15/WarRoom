@@ -1,5 +1,5 @@
 import { ROUNDS, TEAM_COUNT } from "./config";
-import { validateLeague } from "./draft";
+import { keeperAssignments, validateLeague } from "./draft";
 import { normalizePlayers } from "./ingest";
 import type { DraftState, Snapshot } from "./types";
 /** Keep these keys stable across app releases. Website origin and browser profile
@@ -12,10 +12,17 @@ export const BACKUP_KEY = `${STORAGE_KEY}:backup`;
  * Throws without writing anything; the caller decides recovery/confirmation.
  */
 export function decodeState(raw: string): DraftState {
-  const s = JSON.parse(raw) as DraftState;
+  const parsed = JSON.parse(raw);
+  // Schema 1 had no keeper semantics. Migrate in memory; the next successful
+  // write saves schema 2 while retaining the prior raw file as recovery.
+  if (parsed?.version === 1 && parsed.keepers !== undefined)
+    throw new Error("Version-1 backups cannot contain keeper assignments.");
+  const s = (
+    parsed?.version === 1 ? { ...parsed, version: 2, keepers: [] } : parsed
+  ) as DraftState;
   if (
     !s ||
-    s.version !== 1 ||
+    s.version !== 2 ||
     typeof s.started !== "boolean" ||
     typeof s.updatedAt !== "string" ||
     typeof s.revision !== "string"
@@ -24,6 +31,7 @@ export function decodeState(raw: string): DraftState {
   validateLeague(s.league);
   const players = normalizePlayers(s.players);
   const ids = new Set(players.map((p) => p.id));
+  const reserved = keeperAssignments(s.league, players, s.keepers);
   const validSnapshot = (snap: Snapshot) => {
     if (
       !snap ||
@@ -40,12 +48,17 @@ export function decodeState(raw: string): DraftState {
       (snap.cursor === snap.picks.length && snap.picks.includes(null))
     )
       throw new Error("Draft backup contains invalid picks or a bad cursor.");
+    for (const [index, keeper] of reserved)
+      if (snap.picks[index] !== keeper.playerId)
+        throw new Error("Draft backup changed a reserved keeper pick.");
+    if (reserved.has(snap.cursor))
+      throw new Error("Draft cursor cannot point to a keeper reservation.");
   };
   validSnapshot(s);
   if (!Array.isArray(s.history) || s.history.length > 250)
     throw new Error("Draft history is invalid.");
   s.history.forEach(validSnapshot);
-  if (!s.started && s.picks.some(Boolean))
+  if (!s.started && s.picks.some((id, i) => id !== null && !reserved.has(i)))
     throw new Error("Unstarted draft contains picks.");
   return { ...s, players };
 }
@@ -57,6 +70,7 @@ export function saveState(
   storage: Pick<Storage, "getItem" | "setItem">,
   state: DraftState,
 ): void {
+  decodeState(JSON.stringify(state)); // Reject inconsistent candidates before either storage write.
   // Keep the last valid save as recovery. If quota is exhausted, fail visibly.
   const old = storage.getItem(STORAGE_KEY);
   if (old) {

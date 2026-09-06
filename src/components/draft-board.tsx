@@ -1,7 +1,13 @@
 "use client";
 import { ArrowRight, Grid2X2 } from "lucide-react";
 import { ROUNDS } from "@/lib/config";
-import { counts, needs, rosterFor, snakeOrder } from "@/lib/draft";
+import {
+  counts,
+  keeperAssignments,
+  needs,
+  rosterFor,
+  snakeOrder,
+} from "@/lib/draft";
 import { forecastWindow } from "@/lib/engine";
 import { POSITIONS, type DraftState, type Player } from "@/lib/types";
 import { PositionBadge } from "./ui";
@@ -91,8 +97,8 @@ export default function DraftBoard({
       </div>
       <div className="table-footer">
         <span>
-          Click any pick to add or correct a player. Corrections preserve the
-          current clock.
+          Click a live pick to add or correct a player. Edit keepers in League
+          setup before live drafting. Corrections preserve the current clock.
         </span>
         <span>18 rounds · 108 picks</span>
       </div>
@@ -127,13 +133,19 @@ function BoardRound({
           (s) => s.round === round + 1 && s.team === team,
         );
         const p = players.get(state.picks[index] ?? "");
+        const keeper = keeperAssignments(
+          state.league,
+          state.players,
+          state.keepers,
+        ).has(index);
         return (
           <button
-            disabled={!state.started}
+            disabled={!state.started || keeper}
+            data-keeper={keeper || undefined}
             className={`board-cell ${p ? `picked border-${p.position.toLowerCase()}` : "unpicked"} ${index === state.cursor ? "on-clock" : ""} ${team === state.league.myTeam ? "my-column" : ""}`}
             key={team}
             onClick={() => onEdit(index)}
-            aria-label={`Edit pick ${index + 1}${p ? `, ${p.name}` : ""}`}
+            aria-label={`${keeper ? "Keeper" : "Edit"} pick ${index + 1}${p ? `, ${p.name}` : ""}`}
           >
             <span className="pick-number">
               {round + 1}.{String((index % 6) + 1).padStart(2, "0")}{" "}
@@ -145,6 +157,7 @@ function BoardRound({
                 <span className="board-player-meta">
                   <PositionBadge pos={p.position} />
                   {p.team}
+                  {keeper && <span className="keeper-tag">KEEPER</span>}
                 </span>
               </>
             ) : (

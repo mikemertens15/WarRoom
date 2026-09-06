@@ -2,6 +2,18 @@
 
 Generated from `src/lib/releases.json`. Edit that ledger and run `npm run release:notes`. App versions and draft save-format versions are independent.
 
+## 1.2.0 — 2026-09-06 — Keepers and two-pick strategy
+
+Prepare keeper choices before the order draw, then draft with roster-specific gains and clearer comparisons across your next two picks.
+
+- Added up to two optional keepers per team, charged to last season’s round at the team’s new draft position.
+- Added Save preparation, automatic keeper reservations, protected board cells and keeper-aware rosters, forecasts, exports and recovery.
+- Replaced fixed backup multipliers with marginal starting-lineup improvement and diminishing bench value above the deep-pool cutoff.
+- Added deterministic two-pick scenarios, comparative ranges and bounded learning from opponents’ live choices.
+- Added format-1 save migration, full keeper-draft simulations and desktop/mobile workflow tests.
+
+**Compatibility:** Reads older format-1 saves without losing picks or undo; new saves use format 2 and require app 1.2.0 or newer. Browser-local storage and manual JSON transfer remain unchanged.
+
 ## 1.1.0 — 2026-09-06 — Release tracking and device access
 
 A documented foundation for taking the draft room from a local laptop to other devices, and eventually into season management.

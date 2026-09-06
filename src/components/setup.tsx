@@ -9,17 +9,28 @@ import {
   Upload,
 } from "lucide-react";
 import { DEFAULT_SCORING } from "@/lib/config";
-import { validateLeague } from "@/lib/draft";
+import {
+  configureDraft,
+  hasLivePicks,
+  keeperAssignments,
+  validateLeague,
+} from "@/lib/draft";
 import { datasetWarnings, importPlayers } from "@/lib/ingest";
 import { samplePlayers } from "@/lib/sample";
-import { CURRENT_DATA, currentPlayers } from "@/lib/current-data";
+import {
+  applyCurrentData,
+  CURRENT_DATA,
+  currentPlayers,
+} from "@/lib/current-data";
 import {
   POSITIONS,
   type DraftState,
   type League,
   type Player,
+  type Keeper,
 } from "@/lib/types";
 import { Modal, download } from "./ui";
+import KeeperEditor from "./keeper-editor";
 
 export default function Setup({
   state,
@@ -31,7 +42,12 @@ export default function Setup({
 }: {
   state: DraftState;
   onClose: () => void;
-  onSave: (league: League, players: Player[]) => void;
+  onSave: (
+    league: League,
+    players: Player[],
+    keepers: Keeper[],
+    start: boolean,
+  ) => void;
   onReset: () => void;
   onRestore: () => void;
   onUseLatest: (league: League) => void;
@@ -40,10 +56,11 @@ export default function Setup({
   // data path remaps existing picks/history in the parent before persisting.
   const [league, setLeague] = useState<League>(structuredClone(state.league));
   const [players, setPlayers] = useState(state.players);
+  const [keepers, setKeepers] = useState(state.keepers);
   const [error, setError] = useState("");
   const file = useRef<HTMLInputElement>(null);
   const warnings = datasetWarnings(players);
-  const locked = state.picks.some(Boolean);
+  const locked = hasLivePicks(state) || state.history.length > 0;
   function move(index: number, direction: number) {
     const order = [...league.order];
     [order[index], order[index + direction]] = [
@@ -97,7 +114,10 @@ export default function Setup({
               throw new Error(
                 "At least 36 RB/WR players are required for starters and FLEX.",
               );
-            onSave(league, players);
+            keeperAssignments(league, players, keepers);
+            const submitter = (e.nativeEvent as SubmitEvent)
+              .submitter as HTMLButtonElement | null;
+            onSave(league, players, keepers, submitter?.value !== "prepare");
           } catch (e) {
             setError((e as Error).message);
           }
@@ -119,8 +139,8 @@ export default function Setup({
             </p>
             {locked && (
               <p className="locked-note">
-                Order and player pool lock after the first pick. Start a new
-                draft to change them.
+                Order, keepers and player pool lock after the first live pick.
+                Undo live picks or reset the draft to revise preparation.
               </p>
             )}
             <div className="team-editor">
@@ -226,9 +246,17 @@ export default function Setup({
                     onUseLatest(league);
                     return;
                   }
-                  setPlayers(currentPlayers());
-                  setLeague({ ...league, datasetLabel: CURRENT_DATA.label });
-                  setError("");
+                  try {
+                    const updated = applyCurrentData(
+                      configureDraft(state, league, players, keepers, false),
+                    );
+                    setPlayers(updated.players);
+                    setKeepers(updated.keepers);
+                    setLeague(updated.league);
+                    setError("");
+                  } catch (e) {
+                    setError((e as Error).message);
+                  }
                 }}
               >
                 Load latest 2026 data
@@ -297,6 +325,13 @@ export default function Setup({
             </p>
           </section>
         </div>
+        <KeeperEditor
+          league={league}
+          players={players}
+          keepers={keepers}
+          onChange={setKeepers}
+          locked={locked}
+        />
         <details className="scoring-settings">
           <summary>
             <Settings2 size={16} /> League scoring{" "}
@@ -362,7 +397,12 @@ export default function Setup({
               Restore backup
             </button>
           </div>
-          <button type="submit" className="primary">
+          {!state.started && (
+            <button type="submit" value="prepare" className="quiet">
+              Save preparation
+            </button>
+          )}
+          <button type="submit" value="start" className="primary">
             {state.started ? "Save settings" : "Start draft"}
             <ArrowRight size={16} />
           </button>

@@ -1,5 +1,6 @@
 import {
   FLEX_SLOTS,
+  MAX_KEEPERS,
   ROUNDS,
   STARTERS,
   TEAM_COUNT,
@@ -10,6 +11,7 @@ import {
   POSITIONS,
   type DraftState,
   type League,
+  type Keeper,
   type PickSlot,
   type Player,
   type Position,
@@ -61,17 +63,104 @@ export function nextPick(
 export function newDraft(
   league = defaultLeague(),
   players = samplePlayers(),
+  keepers: Keeper[] = [],
 ): DraftState {
+  const picks = Array(TEAM_COUNT * ROUNDS).fill(null);
+  for (const [index, keeper] of keeperAssignments(league, players, keepers))
+    picks[index] = keeper.playerId;
   return {
-    version: 1,
+    version: 2,
+    keepers: keepers.map((k) => ({ ...k })),
     league,
     players,
-    picks: Array(TEAM_COUNT * ROUNDS).fill(null),
-    cursor: 0,
+    picks,
+    cursor: picks.indexOf(null) < 0 ? picks.length : picks.indexOf(null),
     started: false,
     history: [],
     updatedAt: new Date().toISOString(),
     revision: "initial",
+  };
+}
+
+/** Validate assignments before deriving reserved pick IDs. Player ownership still
+ * comes exclusively from the pick array and snake order, never a second roster.
+ */
+export function keeperAssignments(
+  league: League,
+  players: Player[],
+  keepers: Keeper[],
+): Map<number, Keeper> {
+  if (!Array.isArray(keepers) || keepers.length > TEAM_COUNT * MAX_KEEPERS)
+    throw new Error("Invalid keeper list.");
+  const order = snakeOrder(league.order),
+    ids = new Set(players.map((p) => p.id));
+  const result = new Map<number, Keeper>(),
+    used = new Set<string>(),
+    perTeam = Array(TEAM_COUNT).fill(0);
+  for (const k of keepers) {
+    if (
+      !k ||
+      !Number.isInteger(k.team) ||
+      k.team < 0 ||
+      k.team >= TEAM_COUNT ||
+      !Number.isInteger(k.round) ||
+      k.round < 1 ||
+      k.round > ROUNDS ||
+      !ids.has(k.playerId)
+    )
+      throw new Error(
+        "Each keeper needs a valid team, player and round (1–18).",
+      );
+    if (++perTeam[k.team] > MAX_KEEPERS)
+      throw new Error("A team can keep at most two players.");
+    if (used.has(k.playerId))
+      throw new Error(
+        "A player cannot be kept by more than one team or twice.",
+      );
+    const index = order.findIndex(
+      (s) => s.team === k.team && s.round === k.round,
+    );
+    if (result.has(index))
+      throw new Error("Two keepers cannot use the same team's round.");
+    used.add(k.playerId);
+    result.set(index, k);
+  }
+  return result;
+}
+/** Keeper reservations alone do not lock pre-draft order or count as live actions. */
+export function hasLivePicks(state: DraftState): boolean {
+  const reserved = keeperAssignments(
+    state.league,
+    state.players,
+    state.keepers,
+  );
+  return state.picks.some((id, i) => id !== null && !reserved.has(i));
+}
+/** Save pre-draft choices independently of Start, including last-minute order edits.
+ * Rebuild reservations only before live drafting; reject changes to frozen ownership.
+ */
+export function configureDraft(
+  state: DraftState,
+  league: League,
+  players: Player[],
+  keepers: Keeper[],
+  start: boolean,
+): DraftState {
+  validateLeague(league);
+  keeperAssignments(league, players, keepers);
+  if (hasLivePicks(state) || state.history.length) {
+    if (
+      JSON.stringify(league.order) !== JSON.stringify(state.league.order) ||
+      JSON.stringify(keepers) !== JSON.stringify(state.keepers)
+    )
+      throw new Error(
+        "Order and keepers lock after live picks. Undo live picks before changing them.",
+      );
+    return { ...state, league, players, started: state.started || start };
+  }
+  return {
+    ...newDraft(league, players, keepers),
+    started: state.started || start,
   };
 }
 export function availablePlayers(state: DraftState): Player[] {
@@ -125,7 +214,10 @@ export function rosterSlots(
 }
 /** One label per empty starter slot, including FLEX only after base RB/WR needs. */
 export function needs(roster: Player[]): string[] {
-  const c = counts(roster);
+  return needsFromCounts(counts(roster));
+}
+/** The scenario engine shares this contract while simulating positional counts. */
+export function needsFromCounts(c: Record<Position, number>): string[] {
   const result = POSITIONS.flatMap(
     (pos) => Array(Math.max(0, STARTERS[pos] - c[pos])).fill(pos) as string[],
   );
@@ -148,6 +240,10 @@ export function recordPick(
   if (!state.started) throw new Error("Start the draft in League setup first.");
   if (!Number.isInteger(index) || index < 0 || index >= state.picks.length)
     throw new Error("This pick is outside the draft.");
+  if (keeperAssignments(state.league, state.players, state.keepers).has(index))
+    throw new Error(
+      "This pick is reserved for a keeper. Keepers are managed in pre-draft setup.",
+    );
   if (!state.players.some((p) => p.id === playerId))
     throw new Error("Player was not found in the dataset.");
   if (state.picks.some((id, i) => id === playerId && i !== index))

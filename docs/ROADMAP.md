@@ -2,7 +2,7 @@
 
 ## Implemented foundation
 
-The current release supports six-team drafting, validated player/scoring contracts, stable provider IDs, derived rosters, portable backups, transparent recommendations and versioned application releases. It is prepared for Vercel access while retaining local operation. Browser-local persistence remains the storage model.
+The current release supports six-team drafting with optional round-cost keepers, marginal roster value, two-pick scenario comparisons, bounded opponent learning, validated player/scoring contracts, stable provider IDs, derived rosters, portable backups, transparent recommendations and versioned application releases. It is prepared for Vercel access while retaining local operation. Browser-local persistence remains the storage model.
 
 ## Proposed next stages
 

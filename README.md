@@ -2,7 +2,7 @@
 
 A local-first command center for a six-team offline fantasy football snake draft. Record physical-board picks with the keyboard, see every roster, and compare the value of taking a player now with the alternatives likely to survive your next turn.
 
-**Release 1.1.0.** Click the version chip beside the app name to see the release log. [Release history](CHANGELOG.md) · [Documentation index](docs/README.md) · [Contributor guide](CONTRIBUTING.md).
+**Release 1.2.0.** Click the version chip beside the app name to see the release log. [Release history](CHANGELOG.md) · [Documentation index](docs/README.md) · [Contributor guide](CONTRIBUTING.md).
 
 **[Open the production War Room](https://war-room-seven-eosin.vercel.app)** · [Deployment record](docs/DEPLOYMENTS.md). Bookmark this stable address for use on other devices.
 
@@ -35,17 +35,27 @@ Stop the development server with Ctrl+C before starting the production server on
 
 1. Choose **Set up draft**. Enter the six team names and select **Mine** beside your team.
 2. Use the order arrows to match the physical random draw. The app reverses the six-team order every other round automatically.
-3. Use the bundled 2026 snapshot or import your own CSV/JSON player pool. Inspect warnings and check scoring. **Start draft** saves the setup.
+3. Use the bundled 2026 snapshot or import your own CSV/JSON player pool. Inspect warnings and check scoring. Add each team’s optional keepers (player and last year’s round). **Save preparation** persists everything without starting; return when keeper choices or order are final, then choose **Start draft**.
 4. Press **/** or **Ctrl/Cmd+K**, type part of a name, then **Enter**. Arrow keys select another match; Escape closes search. `chase` finds Ja'Marr Chase in the sample. Selection assigns that player to the team **on the clock**, even when it is an opponent's pick.
 5. Use **Why this pick?**, any player name, or a forecast row to inspect the score. The highlighted recommendation always targets **your** roster; the recording button explicitly names the current opponent when it is not your turn.
 6. **Undo** reverses the latest pick action, including an earlier-pick correction. **Ctrl/Cmd+Z** also works outside text inputs. Native text undo is preserved while typing.
-7. Click any draft-board cell to add/correct that pick without moving the current clock. The replaced player returns to availability. Use **Go to pick** to explicitly move the clock; empty earlier picks produce a warning and a return-to-first-empty button.
+7. Click any non-keeper draft-board cell to add/correct that pick without moving the current clock. The replaced player returns to availability. Use **Go to pick** to explicitly move the clock; empty earlier picks produce a warning and a return-to-first-empty button.
 8. Export a **JSON backup** periodically. At the end, export CSV, copy your roster, or print all rosters for manual entry into ESPN. The app does not submit anything to ESPN.
 9. To switch devices, transfer the JSON backup file, open the stable production website on the destination device, and choose **Export draft → Restore a JSON backup**. Review and confirm replacement there. Compare the last pick and team before continuing. CSV and roster text cannot restore a draft.
 
 There are **18 rounds / 108 picks**: 10 starters and 8 bench spots per team. The IR spot is reserved and not drafted. FLEX is **RB/WR only**, following the requested 36 league-wide RB/WR starting slots. Starting roster display is provisional: the highest projected players fill the base positions, then remaining RB/WR fill FLEX. FLEX/bench assignments rebalance after every pick and scoring change. There are no enforced ESPN positional maximums. The input accepts actual physical-board picks, even if a team makes an unusual roster decision; the needs display flags missing starters.
 
-Order and arbitrary player-pool replacement lock after the first recorded pick to prevent silently reassigning the board or losing drafted IDs. Team names, which team is yours, and scoring remain editable. **Load latest 2026 data** is a controlled exception: it preserves picks and undo history by stable ID or unambiguous exact normalized name plus position, and rejects missing or ambiguous identities. An untouched saved demo setup upgrades automatically while preserving league settings; active drafts and custom imports require the explicit update button.
+Order, keeper assignments and arbitrary player-pool replacement lock after the first live pick to prevent silently reassigning the board or losing drafted IDs. Team names, which team is yours, and scoring remain editable. **Load latest 2026 data** is a controlled exception: it preserves picks and undo history by stable ID or unambiguous exact normalized name plus position, and rejects missing or ambiguous identities. An untouched saved demo setup upgrades automatically while preserving league settings; active drafts and custom imports require the explicit update button.
+
+## Optional keepers
+
+Each team may keep **zero, one or two** players. In League setup select the team, player and **round drafted last season (1–18)**. The cost is that team’s pick in the **same round at its new draft position**. For example, a round-2 keeper for the team picking first uses overall #12; move that team to sixth and the reservation becomes #7. Team identity and round stay attached to the keeper.
+
+Save preparation before the order draw if useful. Changing order moves reservations automatically. Keepers appear on rosters immediately, are removed from all available-player lists, affect your roster gains and opponent needs, and appear as **KEEPER** on the board. The clock and next-turn forecast skip reserved slots. The progress display separates keepers from live selections; 12 keepers means 96 live selections across the same 108 slots.
+
+Duplicate players, more than two keepers per team, invalid rounds and two keepers spending the same team’s round are rejected. Keeper cells cannot be overwritten by normal pick entry or board corrections. Order and keeper edits lock once live picks/history exist. Undo all live actions to revise preparation, or use the confirmed reset, which clears live picks/history **but retains keepers, teams, scoring and data**. Remove keepers in setup if starting a league without them. Normal undo never removes keeper reservations.
+
+JSON backups include assignments; CSV includes a `keeper` boolean and round; roster text labels keeper players and cost rounds. Player CSV/JSON import stays player-only—declare keepers in setup or restore a complete draft backup. A custom pool replacement must include all keeper IDs or saving is rejected. **Load latest 2026 data** remaps reservations alongside picks and history, rejecting ambiguous matches.
 
 ## Refreshing the bundled snapshot
 
@@ -58,7 +68,7 @@ npm run build
 npm run start
 ```
 
-Stop any running server before building/starting. Reload the same browser at **http://127.0.0.1:3000**. A saved draft retains its embedded dataset until you open league setup and choose **Load latest 2026 data**. With no picks, review the preview and press **Start draft / Save settings** to persist it. With picks, the button saves the matched update directly. Export a JSON backup before a draft-night update so you also have a portable copy.
+Stop any running server before building/starting. Reload the same browser at **http://127.0.0.1:3000**. A saved draft retains its embedded dataset until you open league setup and choose **Load latest 2026 data**. With no live picks, review the preview and press **Save preparation / Start draft / Save settings** to persist it. With picks, the button saves the matched update directly. Export a JSON backup before a draft-night update so you also have a portable copy.
 
 The refresh script makes explicit online requests to ESPN's public fantasy data endpoint and the [FantasyPros PPR draft rankings page](https://www.fantasypros.com/nfl/rankings/ppr-cheatsheets.php). It validates season, scoring, position coverage and the entire consensus top 250 before replacing the snapshot. It never fetches during live app use. If a provider changes format or validation fails, the prior player snapshot stays available.
 
@@ -111,7 +121,7 @@ All assumptions and weights live in **`src/lib/config.ts`**, and the pure engine
 2. Reserve the first 12 RBs and first 12 WRs for base starters.
 3. Combine the remaining RB/WR; allocate the best 12 to FLEX. Each position's replacement rank is one past its total allocated starters. The combined FLEX baseline is the next unallocated skill player.
 4. For RB/WR use the lower of the positional and FLEX baseline, recognizing both ways to enter a lineup. For QB/TE/DST/K, use the seventh player, reflecting six teams.
-5. Starting VOR is scored projection minus that baseline. Keep this signed value visible. Positive starter VOR contributes to value; negative starter VOR contributes zero rather than making surplus-roster multipliers perversely attractive.
+5. Starting VOR is scored projection minus that baseline. Keep this signed value visible. Positive starter VOR contributes to value; negative starter VOR contributes zero.
 6. Add discounted depth value: `0.20 × max(0, projection − bench baseline)`. Bench baseline assumes one QB, three RB, three WR and one TE reserve per team, beyond allocated starters. This is a tunable valuation assumption totaling eight bench spots, **not a roster constraint**. It distinguishes useful backups below starting replacement from fringe players.
 
 Baselines are calculated from the **entire** original pool and stay stable through the draft; scarcity comes from the remaining pool. When a pool is too thin, use its last known player's projection as a conservative baseline and show a data warning.
@@ -121,26 +131,45 @@ Baselines are calculated from the **entire** original pool and stay stable throu
 - On your turn, forecast the next one **after** your current pick. Otherwise forecast your upcoming pick, including the current opponent in the intervening selections. Consecutive picks have zero intervening selections and 100% survival. A final turn has no waiting urgency. Already filled future picks are skipped after manual jumps; missing earlier picks are explicitly flagged.
 - For each intervening team, assign available players selection weights proportional to `exp(−(market rank − earliest market rank) / 13)`. Market rank blends 75% ADP with 25% league rank. Without ADP, use consensus rank or league rank. ADP from a 12-team league still has market bias; import league-relevant ADP when available.
 - Multiply by positional demand: 1.65 for an unfilled starter/FLEX need, 0.55 for a filled position, 0.22 once a backup exists. Multiply by remaining availability. Remove each player's expected share of that pick and update expected opponent positional counts before the next pick.
-- For each candidate, sort same-position alternatives by league value. Approximate the expected best survivor using independent survival probabilities. A named “likely alternative” is the highest valued one with at least a 45% estimated survival chance; the expected value and the named alternative are distinct quantities.
-- Waiting urgency is `0.85 × max(0, candidate value − expected best alternative value) × probability gone × roster fit`. A scarce RB can therefore outrank a slightly more valuable WR with plentiful surviving peers. An automated test covers that exact situation.
+- For each candidate, sort same-position alternatives by marginal roster gain. Approximate the expected best survivor using independent survival probabilities. A named “likely alternative” is the highest-gain one with at least a 45% estimated survival chance; the expected value and the named alternative are distinct quantities.
+- Waiting urgency is `0.85 × max(0, candidate roster gain − expected best alternative roster gain) × probability gone`. A scarce RB can therefore outrank a slightly more valuable WR with plentiful surviving peers. An automated test covers that exact situation.
 - A last-in-tier candidate gets up to 7 additional points, scaled by probability gone and fit, only when the likely same-position alternative has a worse tier. Imported tiers are used as supplied; inferred tiers start a new tier once projection falls more than 22 points below the tier leader.
 
-### Roster fit and score
+### Conservative opponent learning
 
-`score = league value × fit + waiting urgency + tier cliff + roster need + upside − risk`
+Keeper ownership initializes roster needs but contributes no live-choice evidence. For each recorded live selection, reconstruct the remaining pool and expected positional shares from market rank and current needs. After at least three choices by a team, multiply future demand by `clamp((8 × priorShare + observed) / (8 × priorShare + expected), 0.65, 1.55)`. Prior shares use starters, the configured bench allocation and half of FLEX for RB/WR, divided by 18. Until then factors are 1. Every change, correction or undo recomputes this evidence; no separate profile is saved. Model lab shows each team’s observed count and factors. Sparse or unusual early choices cannot cause unbounded extrapolation.
 
-- Fit: 1.0 for an open starter/FLEX slot, 0.42 for RB/WR depth, 0.14 for a singleton-position backup, 0.04 for further singleton surplus.
+The fractional forecast caps each player’s expected removal at remaining availability and redistributes excess, conserving one expected selection per opponent pick when enough positive-weight capacity remains.
+
+### Marginal roster value and score
+
+`score = roster gain + waiting urgency + tier cliff + roster need + upside − risk`
+
+- Build the provisional best-projection lineup (base positions, then RB/WR FLEX). Each starter contributes `max(0, points − slot baseline)`; empty slots contribute zero. Base slots use the positional replacement baseline; FLEX uses the combined baseline. This is replacement-relative utility, not a forecast of a fully populated lineup’s raw points.
+- Bench contribution is `depthValue × 0.55^j`, where `j` is the number of higher-projected reserves already held at that same position. `depthValue = 0.20 × max(0, points − bench baseline)`. The deep-pool cutoff approximates freely available depth in this six-team league; it is not a live waiver feed.
+- `roster gain = max(0, utility(roster + candidate) − utility(roster))`, where utility is starter contribution plus bench contribution. A QB upgrade gets credit for improved starter value and for the displaced QB becoming useful depth. A fifth reserve at one position gets less credit than the first.
+- The inspector shows starter gain, bench gain and total gain separately. `fit = min(1, roster gain / league player value)` (zero if value is zero) now scales only tier/upside bonuses; fixed backup multipliers no longer determine the score.
 - An open starter/FLEX need adds 12. When remaining draft slots are no greater than open starter slots, another 200 is added and recommendations only consider positions that can fill those needs. Recording physical-board picks remains unrestricted.
 - Upside contributes `8 × upside × fit`; risk subtracts `16 × risk`. Status labels do not change these numbers implicitly.
 - **TAKE** is the top eligible recommendation. **TIER CLIFF** requires the tier adjustment. **LIKELY GONE** means survival below 35%; **STRONG VALUE** means league value above 65; **WAIT** means survival at least 70%. Labels have that priority order and are shortcuts to the quantitative inspector.
 
-These estimates are transparent directional heuristics, **not calibrated real-world probabilities**. The model does not predict injuries, coach decisions, sleepers without numeric inputs, keeper costs, or actual opponent strategies. FLEX value is included in the baseline, not added twice. Forecast alternatives currently compare within the same position; cross-position decisions occur by comparing the resulting candidate scores.
+These estimates are transparent directional heuristics, **not calibrated real-world probabilities**. The model does not predict injuries, coach decisions, sleepers without numeric inputs, or true opponent intentions. It accounts for declared keepers and their round costs; it does not automatically choose your keepers. FLEX value is included in the lineup calculation, not added twice. The quick forecast compares within-position alternatives, while the scenario panel compares cross-position pick sequences.
+
+### Two-pick scenario comparison
+
+Open **Think two picks ahead** on your turn. The panel tests the top six eligible recommendations plus the best eligible candidate at every position (deduplicated). For each first choice it removes that player, simulates intervening opponents without replacement, updates needs after each selection, then chooses your highest marginal-gain eligible remaining player. Keepers are excluded from both candidates and live pick windows. It respects forced starter completion, waits when an opponent is on the clock, and refuses comparisons across unfilled earlier gaps. No later live pick means immediate roster gain is the relevant decision.
+
+There are 72 deterministic scenarios, evenly split across market temperatures `13 × [0.75, 1, 1.35]`. Common seeded draws make candidate comparisons reproducible. Results show mean combined roster gain, the middle 80% scenario range, most frequent second choice and the fraction of scenarios within three utility points of the best tested path. That fraction is not an exclusive winner share: multiple paths can qualify. A mean lead below three points is labeled a close call; otherwise a within-three share of at least 75% earns a consistent-lead label. Other results are labeled sensitive to opponent choices.
+
+The comparison is read-only, computed only while its panel is open and memoized against the draft state so player search does not rerun it. It considers the next two live choices, not the whole season. Projections stay fixed; the panel does not simulate injuries or claim a chance of winning the league. Pair utility excludes the single-pick risk/upside/tier bonuses, so review those in the main recommendation too. Different market assumptions and a limited first-choice shortlist are intentional sources of uncertainty.
 
 ## Autosave and recovery
 
-The browser stores versioned JSON under `draft-war-room:v1`, including imported players, setup, all 108 pick slots, cursor and up to 250 undo snapshots. A previous valid save is retained under `draft-war-room:v1:backup`.
+The browser stores **format-2** JSON under the intentionally unchanged key `draft-war-room:v1`, including imported players, setup, keeper assignments, all 108 pick slots, cursor and up to 250 undo snapshots. A previous valid save is retained under `draft-war-room:v1:backup`.
 
-Every draft mutation writes synchronously **before** updating the interface. On quota/storage failure, the change is rejected and the interface says it was not recorded. Export your last successful state before troubleshooting. On reload, validate the primary save; if damaged, try the previous valid save and show a recovery notice. If both fail, show a recovery screen rather than silently starting over; raw saved text can be downloaded before explicit reset.
+Format-1 backups migrate in memory to format 2 with an empty keeper list; picks, settings and undo history are preserved. Reading alone does not rewrite the old save. The next successful action saves format 2 and retains the previous raw save as recovery. New backups require app 1.2.0 or newer; older apps cannot read format 2. Export before rolling application versions back.
+
+Every draft mutation validates the complete candidate, including each keeper reservation in every history snapshot, then writes synchronously **before** updating the interface. On quota/storage failure, the change is rejected and the interface says it was not recorded. Export your last successful state before troubleshooting. On reload, validate the primary save; if damaged, try the previous valid save and show a recovery notice. If both fail, show a recovery screen rather than silently starting over; raw saved text can be downloaded before explicit reset.
 
 JSON export is a portable full-state backup; CSV is for viewing/ESPN entry and is not a restore format. Restore validates before replacement and requires confirmation. Reset also requires confirmation. Changing the cursor is saved but does not add an undo action; undo reverses pick/correction actions, not settings edits.
 

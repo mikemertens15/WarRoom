@@ -355,7 +355,7 @@ test("damaged primary save recovers the prior save with a visible notice", async
   await expect(page.getByRole("status")).toContainText(
     "Recovered the previous valid save",
   );
-  await expect(page.locator(".clock-strip")).toContainText("1 of 108 recorded");
+  await expect(page.locator(".clock-strip")).toContainText("1 of 108 filled");
   await pick(page, "jefferson");
   expect((await saved(page)).picks.filter(Boolean)).toHaveLength(2);
 });
@@ -376,7 +376,7 @@ test("storage failure rejects a pick visibly without advancing the clock", async
     "Change was not recorded",
   );
   expect((await saved(page)).picks.filter(Boolean)).toHaveLength(0);
-  await expect(page.locator(".clock-strip")).toContainText("0 of 108 recorded");
+  await expect(page.locator(".clock-strip")).toContainText("0 of 108 filled");
 });
 
 test("local runtime works when external network requests are blocked", async ({
@@ -392,6 +392,6 @@ test("local runtime works when external network requests are blocked", async ({
   await start(page);
   await pick(page, "chase");
   await page.reload();
-  await expect(page.locator(".clock-strip")).toContainText("1 of 108 recorded");
+  await expect(page.locator(".clock-strip")).toContainText("1 of 108 filled");
   expect(external).toEqual([]);
 });

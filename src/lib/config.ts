@@ -1,5 +1,6 @@
 import type { League, Position, Scoring } from "./types";
 export const TEAM_COUNT = 6;
+export const MAX_KEEPERS = 2;
 export const ROUNDS = 18; // 10 starters + 8 bench. IR is not a draft slot.
 export const STARTERS: Record<Position, number> = {
   QB: 1,
@@ -36,6 +37,18 @@ export const DEFAULT_SCORING: Scoring = {
  * Keep changes here and document them in README; never disguise model precision.
  */
 export const MODEL = {
+  benchDecay: 0.55, // Successive same-position reserves have diminishing utility.
+  opponentPrior: 8, // Prior observations before live tendencies influence forecasts.
+  opponentMinPicks: 3,
+  opponentBiasMin: 0.65,
+  opponentBiasMax: 1.55,
+  planCandidates: 6,
+  planScenarios: 72,
+  planTemperatures: [0.75, 1, 1.35],
+  planTie: 3, // Roster-value points, not a calibrated confidence interval.
+  planLowQuantile: 0.1,
+  planHighQuantile: 0.9,
+  planConsistentShare: 0.75,
   tierGap: 22,
   depthWeight: 0.2, // Discounted VOR beyond the projected league-wide bench cutoff.
   adpTemperature: 13,
@@ -45,10 +58,6 @@ export const MODEL = {
   opponentBackup: 0.22,
   opportunityWeight: 0.85,
   tierCliffBonus: 7,
-  starterFit: 1,
-  benchFit: 0.42,
-  singletonBackupFit: 0.14,
-  surplusFit: 0.04,
   needBonus: 12,
   requiredSlotBonus: 200,
   upsideWeight: 8,

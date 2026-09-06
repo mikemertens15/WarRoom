@@ -14,21 +14,25 @@ The app has no service worker or installable offline cache. Local production can
 
 1. Open the app in the browser/profile you will actually use. Confirm the version chip and the dataset date in League setup.
 2. Set six team names, your team and the live randomized order. Verify PPR and passing/field-goal scoring.
-3. Start the draft once setup is correct. Verify that the on-clock team matches the board.
+3. Enter zero, one or two keepers per team with last season’s round. **Save preparation** allows decisions before the order is known; reopen setup after the draw to move teams and verify new reserved pick numbers. **Start draft** once setup is correct. Verify that the on-clock team matches the board.
 4. Export a JSON backup after setup and at useful breaks in the draft. Keep it somewhere you can reach from a replacement device.
 5. Keep one recording tab active. Do not clear browser site data or switch to a private window mid-draft.
 
-Use `/` or Ctrl/Cmd+K to focus search. Type enough of the name to distinguish matches, select with arrows, then Enter. The pick goes to the on-clock team. Recommendations describe your team even when an opponent is selecting. Use Undo for the latest correction, or click a board slot to correct an earlier pick.
+Use `/` or Ctrl/Cmd+K to focus search. Type enough of the name to distinguish matches, select with arrows, then Enter. The pick goes to the on-clock team. Recommendations describe your team even when an opponent is selecting. Use Undo for the latest correction, or click a live board slot to correct an earlier pick. Reserved keeper cells are protected; revise them in setup before live picks, or undo all live picks to unlock preparation. The confirmed reset clears live picks/history while retaining keepers.
 
 ## Move an existing draft to another device or domain
 
-1. On the source device, choose **Export draft → JSON backup**. This includes player data, setup, picks and undo history.
+1. On the source device, choose **Export draft → JSON backup**. This includes player data, setup, keeper assignments, picks and undo history.
 2. Transfer that file through your preferred file-sharing method. The app does not upload it for you.
 3. On the destination, open the stable production URL, choose **Export draft → Restore a JSON backup** (also available in League setup), and select the file.
 4. Read the replacement confirmation. If the destination already contains a draft you want, export it before confirming.
 5. Check recorded pick count, last player, next on-clock team, your team and dataset label. Continue only on the destination device.
 
 The local URL and hosted URL have separate saves even on the same laptop. So do Chrome/Edge, different browser profiles, private windows and deployment preview addresses. Bookmark the stable production domain. Hosting and installing a newer application do not synchronize drafts.
+
+On your turn, open **Think two picks ahead** to compare projected two-player gains and scenario ranges. Review the main recommendation’s risk/tier notes as well; the scenario range is not a win probability.
+
+Format-1 saves restore automatically with no keepers and retain their picks/history. New format-2 backups require app 1.2.0 or newer on the destination.
 
 ## Recovery table
 
@@ -46,4 +50,4 @@ The local URL and hosted URL have separate saves even on the same laptop. So do 
 
 ## After the draft
 
-Export a final JSON backup and verify 108 recorded picks. CSV, copied roster text and print/PDF are useful for manual league entry; only JSON is restorable. Keep the original final-draft backup unchanged when later adding season transactions. Weekly lineups, waivers, trades, live scores and automatic ESPN submission are not implemented in this release.
+Export a final JSON backup and verify 108 filled slots (keepers plus live picks). CSV, copied roster text and print/PDF are useful for manual league entry; only JSON is restorable. Keep the original final-draft backup unchanged when later adding season transactions. Weekly lineups, waivers, trades, live scores and automatic ESPN submission are not implemented in this release.
