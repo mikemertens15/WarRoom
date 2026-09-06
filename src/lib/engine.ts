@@ -17,16 +17,26 @@ import {
   type ValuedPlayer,
 } from "./types";
 
+/** Rescore only a supplied stat breakdown. Fixed source point adjustments retain
+ * multiplier 1; an aggregate-only player cannot be converted to other scoring.
+ */
 export function projectedPoints(p: Player, scoring: Scoring): number {
   if (!p.stats) return p.projection; // Aggregate projections must already match league scoring.
   return Object.entries(p.stats).reduce(
     (total, [key, value]) =>
       total +
-      (value ?? 0) * (["dstPoints", "otherPoints"].includes(key) ? 1 : scoring[key as keyof Scoring]),
+      (value ?? 0) *
+        (["dstPoints", "otherPoints"].includes(key)
+          ? 1
+          : scoring[key as keyof Scoring]),
     0,
   );
 }
 
+/** Compute stable baselines from the entire original pool, not available players.
+ * Base RB/WR starters are reserved before FLEX allocation. Positive starter VOR
+ * plus discounted bench depth determines value; signed VOR stays visible for audit.
+ */
 export function valuePlayers(players: Player[], scoring: Scoring) {
   const groups = Object.fromEntries(
     POSITIONS.map((pos) => [
@@ -95,6 +105,9 @@ export function valuePlayers(players: Player[], scoring: Scoring) {
   return { players: result, replacement, replacementRank, flexBaseline };
 }
 
+/** Exclude the current user's selection but include a current opponent selection.
+ * Manually filled future picks are skipped, and no later turn means no urgency.
+ */
 export function forecastWindow(state: DraftState) {
   const order = snakeOrder(state.league.order);
   const onClock = order[state.cursor];
@@ -165,6 +178,10 @@ export function survivalForecast(
   return survival;
 }
 
+/** Rank for the user's roster, regardless of which team is recording a pick.
+ * Every score component is returned for UI audit. Eligibility guides suggestions;
+ * recordPick still accepts unusual real-board choices. No persisted state mutates.
+ */
 export function recommend(state: DraftState): {
   ranked: Recommendation[];
   valuation: ReturnType<typeof valuePlayers>;

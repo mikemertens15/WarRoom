@@ -62,10 +62,13 @@ import { Modal, PositionBadge, fmt, pct, download } from "./ui";
 import Setup from "./setup";
 import DraftBoard from "./draft-board";
 import EditPick from "./edit-pick";
+import ReleaseInfo from "./release-info";
 
 type View = "room" | "board" | "model";
 
 export default function WarRoom() {
+  // Persisted draft state lives here; search, dialogs and navigation are ephemeral.
+  // Keep the ref aligned with successful writes so rapid pick events see fresh data.
   const [state, setState] = useState<DraftState | null>(null);
   const live = useRef<DraftState | null>(null);
   const savedRaw = useRef<string | null>(null);
@@ -131,6 +134,8 @@ export default function WarRoom() {
     return () => window.removeEventListener("storage", changed);
   }, []);
   function commit(next: DraftState, message?: string) {
+    // Compare raw storage as well as listening for events: another tab may have
+    // written before this tab processes its storage event. Failure is never success.
     try {
       if (localStorage.getItem(STORAGE_KEY) !== savedRaw.current)
         throw new Error(
@@ -389,8 +394,11 @@ export default function WarRoom() {
       <div className="workspace">
         <header className="topbar">
           <div className="wordmark">
-            DRAFT <strong>WAR ROOM</strong>
+            <span>
+              DRAFT <strong>WAR ROOM</strong>
+            </span>
             <span className="year">2026</span>
+            <ReleaseInfo />
           </div>
           <div className="header-meta">
             <span className="local-status">
@@ -1488,6 +1496,11 @@ export default function WarRoom() {
             readOnly
             value={rosterText(state)}
           />
+          <p className="help-text">
+            Moving devices? Transfer the JSON backup to the other device and
+            restore it at the same website address. Each browser keeps its own
+            draft; changes do not sync automatically.
+          </p>
           <button className="quiet" onClick={() => restore.current?.click()}>
             <Upload size={15} /> Restore a JSON backup
           </button>

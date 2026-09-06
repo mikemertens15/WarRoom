@@ -1,6 +1,6 @@
 {
   "name": "draft-war-room",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Local-first six-team fantasy football draft command center",
   "scripts": {
     "test": "tsx --test tests/*.test.ts",
@@ -10,7 +10,10 @@
     "typecheck": "tsc --noEmit",
     "simulate": "tsx scripts/simulate.ts",
     "test:e2e": "playwright test",
-    "refresh:data": "tsx scripts/refresh-data.ts"
+    "refresh:data": "tsx scripts/refresh-data.ts",
+    "release:notes": "tsx scripts/release-log.ts",
+    "release:check": "tsx scripts/release-log.ts --check",
+    "prebuild": "npm run release:check"
   },
   "keywords": [],
   "author": "",

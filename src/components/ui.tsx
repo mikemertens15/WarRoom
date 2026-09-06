@@ -18,6 +18,10 @@ export function download(
 export function PositionBadge({ pos }: { pos: string }) {
   return <span className={`position pos-${pos.toLowerCase()}`}>{pos}</span>;
 }
+/** Shared keyboard boundary: enter focus, contain Tab, dismiss on Escape, restore
+ * the invoking control and release scroll locking on close. Keep onClose stable
+ * when a dialog rerenders frequently so this focus lifecycle is not restarted.
+ */
 export function Modal({
   title,
   subtitle,

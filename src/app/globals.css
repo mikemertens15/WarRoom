@@ -232,6 +232,9 @@ svg {
   background: #161a18;
 }
 .wordmark {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-size: 14px;
   letter-spacing: 1.7px;
   font-weight: 400;
@@ -239,6 +242,29 @@ svg {
 .wordmark strong {
   font-weight: 800;
 }
+.version-chip {
+  padding: 5px 8px;
+  border: 1px solid #627458;
+  border-radius: 999px;
+  color: #d1e5c2;
+  background: #263225;
+  font: 10px var(--mono);
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+.version-chip:hover { background: #35452e; }
+.version-chip:focus-visible { outline: 2px solid var(--orange); outline-offset: 3px; }
+.release-list { list-style: none; padding: 0; margin: 22px 0 0; letter-spacing: normal; font-weight: 400; }
+.release-list > li { border-top: 1px solid var(--border); padding: 22px 0 8px; }
+.release-meta { display: flex; gap: 12px; align-items: center; font: 11px var(--mono); color: #a8b59f; }
+.release-meta strong { color: #efb273; }
+.release-meta span { margin-left: auto; color: #c0d9ad; }
+.release-list h3 { margin: 14px 0 10px; color: #e7eae4; font-size: 18px; }
+.release-list p, .release-list ul, .release-storage-note { font-size: 13px; line-height: 1.65; color: #b7c2b0; letter-spacing: normal; font-weight: 400; }
+.release-list ul { padding-left: 20px; }
+.release-list ul li { margin: 8px 0; }
+.release-storage-note { border: 1px solid #43513c; border-radius: 8px; background: #222d20; padding: 14px; }
+.release-list .release-compatibility { color: #94a18c; font-size: 12px; }
 .year {
   font: 10px var(--mono);
   color: #a5aea7;
@@ -2204,8 +2230,9 @@ main {
     font-size: 10px;
   }
   .year {
-    margin-left: 6px;
+    display: none;
   }
+  .wordmark { flex-direction: column; align-items: flex-start; gap: 4px; }
   .page-heading {
     align-items: flex-start;
     gap: 12px;

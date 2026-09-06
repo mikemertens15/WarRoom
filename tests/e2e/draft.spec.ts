@@ -6,6 +6,7 @@ const gibbsId = currentPlayers().find((p) => p.name === "Jahmyr Gibbs")!.id;
 import { samplePlayers } from "../../src/lib/sample";
 import { STORAGE_KEY } from "../../src/lib/persistence";
 import { newDraft, recordPick } from "../../src/lib/draft";
+import releases from "../../src/lib/releases.json";
 async function start(page: Page) {
   await page.goto("/");
   await page.getByRole("button", { name: "Set up draft", exact: true }).click();
@@ -28,6 +29,28 @@ async function saved(page: Page) {
     (key) => JSON.parse(localStorage.getItem(key)!),
     STORAGE_KEY,
   );
+}
+
+for (const width of [1440, 390]) {
+  test(`release log is readable at ${width}px and leaves the saved draft intact`, async ({ page }) => {
+    await page.setViewportSize({ width, height: 900 });
+    await start(page);
+    await pick(page, "jamarrchase");
+    const before = await saved(page);
+    const chip = page.getByRole("button", { name: `Version ${releases[0].version} — open release log`, exact: true });
+    await chip.click();
+    const log = page.getByRole("dialog", { name: "Release log", exact: true });
+    await expect(log).toContainText(releases[0].title);
+    await expect(log).toContainText("Draft-night foundation");
+    await expect(log).toContainText("another device");
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    await page.screenshot({ path: `artifacts/release-${width}.png` });
+    await page.keyboard.press("Escape");
+    await expect(log).not.toBeVisible();
+    await expect(chip).toBeFocused();
+    expect(await saved(page)).toEqual(before);
+    await page.screenshot({ path: `artifacts/room-${width}.png` });
+  });
 }
 
 test("latest data update preserves saved demo picks and undo through reload", async ({

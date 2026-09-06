@@ -2,6 +2,12 @@
 
 A local-first command center for a six-team offline fantasy football snake draft. Record physical-board picks with the keyboard, see every roster, and compare the value of taking a player now with the alternatives likely to survive your next turn.
 
+**Release 1.1.0.** Click the version chip beside the app name to see the release log. [Release history](CHANGELOG.md) · [Documentation index](docs/README.md) · [Contributor guide](CONTRIBUTING.md).
+
+**[Open the production War Room](https://war-room-seven-eosin.vercel.app)** · [Deployment record](docs/DEPLOYMENTS.md). Bookmark this stable address for use on other devices.
+
+The app can run on your laptop or Vercel. **Drafts save in each browser, with no automatic device sync.** Vercel makes the interface accessible on other devices; use a JSON backup to carry your draft there. See [device transfer and recovery](docs/OPERATIONS.md) and [hosting and releases](docs/DEPLOYMENT.md). Season-management work is outlined in the [roadmap](docs/ROADMAP.md).
+
 **The default pool contains 534 real 2026 players and defenses**, retrieved September 6, 2026 at 8:01 a.m. America/Chicago. ESPN supplies season projections, usable ADP, teams, bye weeks and injury/status designations. FantasyPros supplies PPR consensus ranks. The separate downloadable 198-player sample remains synthetic practice data.
 
 ## Run locally
@@ -35,6 +41,7 @@ Stop the development server with Ctrl+C before starting the production server on
 6. **Undo** reverses the latest pick action, including an earlier-pick correction. **Ctrl/Cmd+Z** also works outside text inputs. Native text undo is preserved while typing.
 7. Click any draft-board cell to add/correct that pick without moving the current clock. The replaced player returns to availability. Use **Go to pick** to explicitly move the clock; empty earlier picks produce a warning and a return-to-first-empty button.
 8. Export a **JSON backup** periodically. At the end, export CSV, copy your roster, or print all rosters for manual entry into ESPN. The app does not submit anything to ESPN.
+9. To switch devices, transfer the JSON backup file, open the stable production website on the destination device, and choose **Export draft → Restore a JSON backup**. Review and confirm replacement there. Compare the last pick and team before continuing. CSV and roster text cannot restore a draft.
 
 There are **18 rounds / 108 picks**: 10 starters and 8 bench spots per team. The IR spot is reserved and not drafted. FLEX is **RB/WR only**, following the requested 36 league-wide RB/WR starting slots. Starting roster display is provisional: the highest projected players fill the base positions, then remaining RB/WR fill FLEX. FLEX/bench assignments rebalance after every pick and scoring change. There are no enforced ESPN positional maximums. The input accepts actual physical-board picks, even if a team makes an unusual roster decision; the needs display flags missing starters.
 
@@ -143,6 +150,7 @@ Use one active recording tab. A storage-change event warns other tabs, and stale
 
 ```powershell
 npm run typecheck
+npm run release:check
 npm test
 npm run simulate
 npm run simulate -- 123
@@ -165,7 +173,9 @@ Browser tests cover keyboard entry, reload/undo, board edits, cursor jumps, impo
 - `src/lib/persistence.ts`: versioned save validation and previous-save recovery.
 - `src/lib/export.ts`: JSON-independent roster text and spreadsheet-safe CSV.
 - `src/lib/simulation.ts`: deterministic-seed draft harness.
+- `src/lib/current-data.ts`: bundled snapshot and identity-safe updates of saved picks/history.
+- `src/lib/releases.json`: release ledger used by the version chip and generated changelog.
 - `src/components/`: dashboard, setup, board, pick editor and shared dialog primitives.
 - `src/app/`: Next.js shell and local CSS; no application backend routes.
 
-A future weekly mode can reuse player/scoring contracts and roster utilities as a separate domain. It is intentionally not built now. Avoid adding accounts, cloud infrastructure, live scraping or provider coupling to solve a local draft problem.
+A future weekly mode can reuse player/scoring contracts and roster utilities as a separate domain. It is intentionally not built now. See the [architecture guide](docs/ARCHITECTURE.md) and [season-management roadmap](docs/ROADMAP.md) before extending the draft state. Vercel currently serves the application; it stores no draft records.

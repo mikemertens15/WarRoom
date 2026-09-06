@@ -9,6 +9,7 @@ import {
 } from "./draft";
 import { recommend } from "./engine";
 import type { DraftState, Player } from "./types";
+/** Local deterministic PRNG for repeatable opponent choices, not security use. */
 export function seededRandom(seed: number) {
   return () => {
     seed |= 0;
@@ -18,6 +19,10 @@ export function seededRandom(seed: number) {
     return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
   };
 }
+/** Complete all 108 picks from one user's seat. Synthetic opponents enforce final
+ * starter coverage and sample market-biased choices. Survival comparisons are a
+ * sanity harness, not independent evidence that the forecast is calibrated.
+ */
 export function simulateDraft(
   seat: number,
   seed = 42,

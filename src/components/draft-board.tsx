@@ -6,6 +6,9 @@ import { forecastWindow } from "@/lib/engine";
 import { POSITIONS, type DraftState, type Player } from "@/lib/types";
 import { PositionBadge } from "./ui";
 
+/** Display-only projection of chronological picks into snake-order board columns.
+ * Editing passes an index upward; this component never stores competing rosters.
+ */
 export default function DraftBoard({
   state,
   full,

@@ -36,6 +36,8 @@ export default function Setup({
   onRestore: () => void;
   onUseLatest: (league: League) => void;
 }) {
+  // Ordinary settings/imports stay a preview until submit. The controlled latest-
+  // data path remaps existing picks/history in the parent before persisting.
   const [league, setLeague] = useState<League>(structuredClone(state.league));
   const [players, setPlayers] = useState(state.players);
   const [error, setError] = useState("");

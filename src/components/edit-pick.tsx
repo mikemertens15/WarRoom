@@ -5,6 +5,9 @@ import { snakeOrder } from "@/lib/draft";
 import type { DraftState } from "@/lib/types";
 import { Modal, PositionBadge } from "./ui";
 
+/** Allow the current slot's player to remain selectable while excluding players
+ * owned by other slots. The parent validates, persists and preserves the clock.
+ */
 export default function EditPick({
   state,
   index,
