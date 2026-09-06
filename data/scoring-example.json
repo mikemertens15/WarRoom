@@ -1,0 +1,14 @@
+{
+  "players": [
+    {
+      "id": "example-wr", "name": "Example Receiver", "team": "DEMO", "position": "WR",
+      "projection": 228, "adp": 25, "sample": true, "source": "SCHEMA EXAMPLE ONLY",
+      "stats": { "receptions": 80, "recYards": 1000, "recTD": 8 }
+    },
+    {
+      "id": "example-k", "name": "Example Kicker", "team": "DEMO", "position": "K",
+      "projection": 153, "sample": true, "source": "SCHEMA EXAMPLE ONLY",
+      "stats": { "fgYards": 1180, "extraPoints": 35 }
+    }
+  ]
+}

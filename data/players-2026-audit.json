@@ -1,0 +1,5581 @@
+{
+  "id": "espn-fp-2026-2026-09-06T13:01:07.991Z",
+  "season": 2026,
+  "fetchedAt": "2026-09-06T13:01:07.991Z",
+  "label": "2026 ESPN + FantasyPros · Sep 6, 2026",
+  "sources": {
+    "projections": "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026/segments/0/leaguedefaults/3?view=kona_player_info",
+    "teams": "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026?view=proTeamSchedules_wl",
+    "consensus": "https://www.fantasypros.com/nfl/rankings/ppr-cheatsheets.php"
+  },
+  "consensusUpdatedAt": "2026-09-06T11:51:44.000Z",
+  "espnProjectionUpdatedAt": null,
+  "adpUpdatedRange": [
+    "2026-09-06T12:30:14.295Z",
+    "2026-09-06T12:30:18.039Z"
+  ],
+  "counts": {
+    "QB": 66,
+    "RB": 119,
+    "WR": 180,
+    "TE": 100,
+    "DST": 32,
+    "K": 37
+  },
+  "playerCount": 534,
+  "withAdp": 191,
+  "withConsensus": 473,
+  "withStatus": 89,
+  "notes": [
+    "Full-season 2026 projections, not Week 1.",
+    "Source projections are ESPN; consensus rank is FantasyPros where identity matches. No synthetic upside/risk or tier fields are supplied.",
+    "ESPN ADP at or above 169 is treated as censored/missing; forecast falls back to consensus/model rank.",
+    "Kickers use exact projected made-field-goal yards with ESPN other adjustments retained. DST retains ESPN default scoring.",
+    "otherPoints preserves source scoring outside the configurable core stats, including two-point conversions and return scores. It is a fixed points adjustment when custom scoring changes.",
+    "Injury/status designations are ESPN's snapshot, not medical judgments or independent news verification.",
+    "ESPN does not expose a full-season projection update timestamp; fetchedAt is retrieval time, not publication time."
+  ],
+  "rawHashes": {
+    "espn": "35fd0ffd0af7c4c84d6a6a7bb0d43117c9f96db25efdb9111a61a239d4870782",
+    "consensus": "8cbf1016e92e7bafa904fed39da4433e65cdec139b5d289797978951a74b1dd6"
+  },
+  "omittedCount": 502,
+  "missingTop250": [],
+  "details": {
+    "espn-4429795": {
+      "espnId": 4429795,
+      "fantasyProsId": 22968,
+      "espnProjection": 365.66727684,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.979Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4430807": {
+      "espnId": 4430807,
+      "fantasyProsId": 23133,
+      "espnProjection": 352.80097344,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.024Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4362628": {
+      "espnId": 4362628,
+      "fantasyProsId": 19788,
+      "espnProjection": 336.94557365,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.545Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4426515": {
+      "espnId": 4426515,
+      "fantasyProsId": 23180,
+      "espnProjection": 353.58398975,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.769Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4242335": {
+      "espnId": 4242335,
+      "fantasyProsId": 19217,
+      "espnProjection": 316.30331382,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.167Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4430878": {
+      "espnId": 4430878,
+      "fantasyProsId": 23070,
+      "espnProjection": 326.66995964,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.040Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3117251": {
+      "espnId": 3117251,
+      "fantasyProsId": 16393,
+      "espnProjection": 341.88631234,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.287Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4374302": {
+      "espnId": 4374302,
+      "fantasyProsId": 19799,
+      "espnProjection": 324.44327963,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.660Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4379399": {
+      "espnId": 4379399,
+      "fantasyProsId": 22958,
+      "espnProjection": 280.31414284,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.672Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4241389": {
+      "espnId": 4241389,
+      "fantasyProsId": 19202,
+      "espnProjection": 293.62742666,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.101Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4262921": {
+      "espnId": 4262921,
+      "fantasyProsId": 19236,
+      "espnProjection": 294.67210672,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.341Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4429160": {
+      "espnId": 4429160,
+      "fantasyProsId": 23136,
+      "espnProjection": 293.57397401,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.941Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4685382": {
+      "espnId": 4685382,
+      "fantasyProsId": 25395,
+      "espnProjection": 261.71448375,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.547Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4362238": {
+      "espnId": 4362238,
+      "fantasyProsId": 25324,
+      "espnProjection": 271.60865615,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.522Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3929630": {
+      "espnId": 3929630,
+      "fantasyProsId": 17240,
+      "espnProjection": 273.30217759,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.717Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3043078": {
+      "espnId": 3043078,
+      "fantasyProsId": 15514,
+      "espnProjection": 277.81109202,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.003Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4890973": {
+      "espnId": 4890973,
+      "fantasyProsId": 25989,
+      "espnProjection": 278.89877031,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.973Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4426502": {
+      "espnId": 4426502,
+      "fantasyProsId": 23163,
+      "espnProjection": 269.77861353,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.761Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4870808": {
+      "espnId": 4870808,
+      "fantasyProsId": 25403,
+      "espnProjection": 276.52653564,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.895Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4047646": {
+      "espnId": 4047646,
+      "fantasyProsId": 18218,
+      "espnProjection": 249.71407746,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.993Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4361307": {
+      "espnId": 4361307,
+      "fantasyProsId": 22936,
+      "espnProjection": 241.65202394,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.446Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4432665": {
+      "espnId": 4432665,
+      "fantasyProsId": 22955,
+      "espnProjection": 240.89154634,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.131Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4258173": {
+      "espnId": 4258173,
+      "fantasyProsId": 20130,
+      "espnProjection": 248.22187065,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.293Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4361370": {
+      "espnId": 4361370,
+      "fantasyProsId": 20111,
+      "espnProjection": 249.81226241,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.456Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4428331": {
+      "espnId": 4428331,
+      "fantasyProsId": 23113,
+      "espnProjection": 259.26816371,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.861Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3918298": {
+      "espnId": 3918298,
+      "fantasyProsId": 17298,
+      "espnProjection": 370.5519409,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.681Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4426354": {
+      "espnId": 4426354,
+      "fantasyProsId": 22963,
+      "espnProjection": 239.25406404,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.727Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4567048": {
+      "espnId": 4567048,
+      "fantasyProsId": 23021,
+      "espnProjection": 273.0838511,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.182Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4569618": {
+      "espnId": 4569618,
+      "fantasyProsId": 23072,
+      "espnProjection": 250.29130698,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.260Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4427366": {
+      "espnId": 4427366,
+      "fantasyProsId": 22982,
+      "espnProjection": 274.47317751,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.816Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4361579": {
+      "espnId": 4361579,
+      "fantasyProsId": 22739,
+      "espnProjection": 259.48689499,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.480Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4430737": {
+      "espnId": 4430737,
+      "fantasyProsId": 23059,
+      "espnProjection": 232.01003414,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.018Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4595348": {
+      "espnId": 4595348,
+      "fantasyProsId": 25409,
+      "espnProjection": 243.8874967,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.358Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4241478": {
+      "espnId": 4241478,
+      "fantasyProsId": 19222,
+      "espnProjection": 239.08357327,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.123Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4239996": {
+      "espnId": 4239996,
+      "fantasyProsId": 19231,
+      "espnProjection": 246.69980163,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.042Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4685472": {
+      "espnId": 4685472,
+      "fantasyProsId": 25417,
+      "espnProjection": 236.15808312,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.565Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4429615": {
+      "espnId": 4429615,
+      "fantasyProsId": 22916,
+      "espnProjection": 238.47751413,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.971Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4567750": {
+      "espnId": 4567750,
+      "fantasyProsId": 23062,
+      "espnProjection": 228.96994974,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.214Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4685702": {
+      "espnId": 4685702,
+      "fantasyProsId": 25391,
+      "espnProjection": 226.74554228,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.606Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4612826": {
+      "espnId": 4612826,
+      "fantasyProsId": 26122,
+      "espnProjection": 220.99549381,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.425Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4239993": {
+      "espnId": 4239993,
+      "fantasyProsId": 19211,
+      "espnProjection": 218.92004347,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.036Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4723086": {
+      "espnId": 4723086,
+      "fantasyProsId": 26006,
+      "espnProjection": 206.94356188,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.804Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3916387": {
+      "espnId": 3916387,
+      "fantasyProsId": 17233,
+      "espnProjection": 322.51227164,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.641Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-16800": {
+      "espnId": 16800,
+      "fantasyProsId": 12123,
+      "espnProjection": 232.21906542,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:14.813Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4696981": {
+      "espnId": 4696981,
+      "fantasyProsId": 27166,
+      "espnProjection": 227.38681901,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.736Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4259545": {
+      "espnId": 4259545,
+      "fantasyProsId": 19210,
+      "espnProjection": 210.47199177,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.317Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4882093": {
+      "espnId": 4882093,
+      "fantasyProsId": 27297,
+      "espnProjection": 206.02127737,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.968Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4372016": {
+      "espnId": 4372016,
+      "fantasyProsId": 19790,
+      "espnProjection": 213.05733051,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.607Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4596448": {
+      "espnId": 4596448,
+      "fantasyProsId": 25981,
+      "espnProjection": 207.11084758,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.365Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3121422": {
+      "espnId": 3121422,
+      "fantasyProsId": 18466,
+      "espnProjection": 218.20946591,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.316Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3915416": {
+      "espnId": 3915416,
+      "fantasyProsId": 17265,
+      "espnProjection": 209.72858126,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.616Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4431459": {
+      "espnId": 4431459,
+      "fantasyProsId": 26434,
+      "espnProjection": 210.62572952,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.074Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4426388": {
+      "espnId": 4426388,
+      "fantasyProsId": 23677,
+      "espnProjection": 208.62416648,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.739Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4431299": {
+      "espnId": 4431299,
+      "fantasyProsId": 25411,
+      "espnProjection": 213.55134299,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.063Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4426348": {
+      "espnId": 4426348,
+      "fantasyProsId": 22902,
+      "espnProjection": 317.48994413,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.720Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4431452": {
+      "espnId": 4431452,
+      "fantasyProsId": 23046,
+      "espnProjection": 320.17261778,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.071Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4035538": {
+      "espnId": 4035538,
+      "fantasyProsId": 18239,
+      "espnProjection": 199.68127698,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.817Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4685512": {
+      "espnId": 4685512,
+      "fantasyProsId": 27329,
+      "espnProjection": 194.0616339,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.576Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4685278": {
+      "espnId": 4685278,
+      "fantasyProsId": 27016,
+      "espnProjection": 206.82457056,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.520Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4432710": {
+      "espnId": 4432710,
+      "fantasyProsId": 23065,
+      "espnProjection": 197.871002,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.138Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4871023": {
+      "espnId": 4871023,
+      "fantasyProsId": 26009,
+      "espnProjection": 202.23501788,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.915Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-16737": {
+      "espnId": 16737,
+      "fantasyProsId": 12119,
+      "espnProjection": 180.11879314,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:14.804Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4432708": {
+      "espnId": 4432708,
+      "fantasyProsId": 23064,
+      "espnProjection": 193.61006177,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.135Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3915511": {
+      "espnId": 3915511,
+      "fantasyProsId": 19196,
+      "espnProjection": 304.32823765,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.621Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4569173": {
+      "espnId": 4569173,
+      "fantasyProsId": 22726,
+      "espnProjection": 203.34139714,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.241Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4040715": {
+      "espnId": 4040715,
+      "fantasyProsId": 19275,
+      "espnProjection": 319.83543312,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.936Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4035687": {
+      "espnId": 4035687,
+      "fantasyProsId": 19278,
+      "espnProjection": 197.17356957,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.831Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3916148": {
+      "espnId": 3916148,
+      "fantasyProsId": 18705,
+      "espnProjection": 185.53767849,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.636Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-5083076": {
+      "espnId": 5083076,
+      "fantasyProsId": 27050,
+      "espnProjection": 188.86833095,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:18.036Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4360248": {
+      "espnId": 4360248,
+      "fantasyProsId": 20164,
+      "espnProjection": 185.14866572,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.364Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4047650": {
+      "espnId": 4047650,
+      "fantasyProsId": 18219,
+      "espnProjection": 195.79324142,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.995Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3040151": {
+      "espnId": 3040151,
+      "fantasyProsId": 16499,
+      "espnProjection": 193.43652005,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:14.980Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3128429": {
+      "espnId": 3128429,
+      "fantasyProsId": 17253,
+      "espnProjection": 204.11645156,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.472Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4248528": {
+      "espnId": 4248528,
+      "fantasyProsId": 23886,
+      "espnProjection": 188.75787347,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.251Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-2577417": {
+      "espnId": 2577417,
+      "fantasyProsId": 15600,
+      "espnProjection": 286.11130176,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:14.873Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4432620": {
+      "espnId": 4432620,
+      "fantasyProsId": 23106,
+      "espnProjection": 187.2268169,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.126Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4569987": {
+      "espnId": 4569987,
+      "fantasyProsId": 24209,
+      "espnProjection": 193.96027522,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.268Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4430027": {
+      "espnId": 4430027,
+      "fantasyProsId": 22978,
+      "espnProjection": 188.91204447,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.989Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4371733": {
+      "espnId": 4371733,
+      "fantasyProsId": 23310,
+      "espnProjection": 177.85590081,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.593Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4689114": {
+      "espnId": 4689114,
+      "fantasyProsId": 23160,
+      "espnProjection": 299.52563618,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.672Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4047365": {
+      "espnId": 4047365,
+      "fantasyProsId": 18269,
+      "espnProjection": 164.38297688,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.991Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4569587": {
+      "espnId": 4569587,
+      "fantasyProsId": 22985,
+      "espnProjection": 174.84777793,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.255Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4678008": {
+      "espnId": 4678008,
+      "fantasyProsId": 26148,
+      "espnProjection": 179.86533631,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.438Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4038941": {
+      "espnId": 4038941,
+      "fantasyProsId": 18635,
+      "espnProjection": 283.57791274,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.903Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4360761": {
+      "espnId": 4360761,
+      "fantasyProsId": 25333,
+      "espnProjection": 176.36272608,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.410Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4429023": {
+      "espnId": 4429023,
+      "fantasyProsId": 23118,
+      "espnProjection": 134.78851378,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.922Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4431611": {
+      "espnId": 4431611,
+      "fantasyProsId": 23084,
+      "espnProjection": 281.92016557,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.109Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4038815": {
+      "espnId": 4038815,
+      "fantasyProsId": 19647,
+      "espnProjection": 188.32135431,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.898Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-2976212": {
+      "espnId": 2976212,
+      "fantasyProsId": 13981,
+      "espnProjection": 173.07055349,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:14.932Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4360078": {
+      "espnId": 4360078,
+      "fantasyProsId": 23791,
+      "espnProjection": 185.42948979,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.353Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4685415": {
+      "espnId": 4685415,
+      "fantasyProsId": 26034,
+      "espnProjection": 103.57323334,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.559Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4572680": {
+      "espnId": 4572680,
+      "fantasyProsId": 25298,
+      "espnProjection": 172.26815891,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.305Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4241416": {
+      "espnId": 4241416,
+      "fantasyProsId": 19792,
+      "espnProjection": 180.23597475,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.107Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3916433": {
+      "espnId": 3916433,
+      "fantasyProsId": 18598,
+      "espnProjection": 181.93871186,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.646Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4360310": {
+      "espnId": 4360310,
+      "fantasyProsId": 19780,
+      "espnProjection": 289.54865055,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.372Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3042519": {
+      "espnId": 3042519,
+      "fantasyProsId": 16673,
+      "espnProjection": 178.01282116,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:14.997Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4432773": {
+      "espnId": 4432773,
+      "fantasyProsId": 23000,
+      "espnProjection": 176.65913167,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.153Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3953687": {
+      "espnId": 3953687,
+      "fantasyProsId": 26068,
+      "espnProjection": 171.47184129,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.754Z",
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-4361741": {
+      "espnId": 4361741,
+      "fantasyProsId": 19797,
+      "espnProjection": 292.04553947,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.488Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4697815": {
+      "espnId": 4697815,
+      "fantasyProsId": 23891,
+      "espnProjection": 164.26972817,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.749Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4241985": {
+      "espnId": 4241985,
+      "fantasyProsId": 19245,
+      "espnProjection": 174.78613347,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.141Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4608686": {
+      "espnId": 4608686,
+      "fantasyProsId": 27131,
+      "espnProjection": 175.18508724,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.412Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-15847": {
+      "espnId": 15847,
+      "fantasyProsId": 11594,
+      "espnProjection": 177.18883453,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:14.763Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4701936": {
+      "espnId": 4701936,
+      "fantasyProsId": 26024,
+      "espnProjection": 188.89859285,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.766Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3116165": {
+      "espnId": 3116165,
+      "fantasyProsId": 16406,
+      "espnProjection": 157.33353261,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.205Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4429205": {
+      "espnId": 4429205,
+      "fantasyProsId": 23107,
+      "espnProjection": 171.07916574,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.954Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4688813": {
+      "espnId": 4688813,
+      "fantasyProsId": 24706,
+      "espnProjection": 157.67928759,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.665Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3121023": {
+      "espnId": 3121023,
+      "fantasyProsId": 17270,
+      "espnProjection": 176.94611858,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.311Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4568490": {
+      "espnId": 4568490,
+      "fantasyProsId": 27142,
+      "espnProjection": 149.37202933,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.230Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3139477": {
+      "espnId": 3139477,
+      "fantasyProsId": 16413,
+      "espnProjection": 290.97210836,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.513Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4373678": {
+      "espnId": 4373678,
+      "fantasyProsId": 23748,
+      "espnProjection": 171.28169853,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.645Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4429096": {
+      "espnId": 4429096,
+      "fantasyProsId": 23013,
+      "espnProjection": 159.28790712,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.934Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4426338": {
+      "espnId": 4426338,
+      "fantasyProsId": 22910,
+      "espnProjection": 295.73082077,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.711Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-12483": {
+      "espnId": 12483,
+      "fantasyProsId": 9451,
+      "espnProjection": 292.84720263,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:14.692Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4242355": {
+      "espnId": 4242355,
+      "fantasyProsId": 22718,
+      "espnProjection": 166.58216589,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.170Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4870795": {
+      "espnId": 4870795,
+      "fantasyProsId": 25420,
+      "espnProjection": 155.1634061,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.890Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4361050": {
+      "espnId": 4361050,
+      "fantasyProsId": 23781,
+      "espnProjection": 155.09309005,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.434Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4429025": {
+      "espnId": 4429025,
+      "fantasyProsId": 23123,
+      "espnProjection": 165.39610291,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.924Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4575131": {
+      "espnId": 4575131,
+      "fantasyProsId": 27316,
+      "espnProjection": 159.03637485,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.322Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4362249": {
+      "espnId": 4362249,
+      "fantasyProsId": 23020,
+      "espnProjection": 173.67592964,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.527Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3116365": {
+      "espnId": 3116365,
+      "fantasyProsId": 17269,
+      "espnProjection": 169.06873792,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.269Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4710714": {
+      "espnId": 4710714,
+      "fantasyProsId": 28138,
+      "espnProjection": 160.20093775,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.789Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3917315": {
+      "espnId": 3917315,
+      "fantasyProsId": 18600,
+      "espnProjection": 283.38791842,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.670Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4683062": {
+      "espnId": 4683062,
+      "fantasyProsId": 23019,
+      "espnProjection": 172.95866424,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.461Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4361432": {
+      "espnId": 4361432,
+      "fantasyProsId": 23794,
+      "espnProjection": 150.613982,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.467Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4695883": {
+      "espnId": 4695883,
+      "fantasyProsId": 26403,
+      "espnProjection": 147.00811088,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.721Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4385690": {
+      "espnId": 4385690,
+      "fantasyProsId": 25247,
+      "espnProjection": 155.55128355,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.698Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4428557": {
+      "espnId": 4428557,
+      "fantasyProsId": 25323,
+      "espnProjection": 154.28387791,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.876Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4362081": {
+      "espnId": 4362081,
+      "fantasyProsId": 23901,
+      "espnProjection": 161.89103824,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.509Z",
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-4360689": {
+      "espnId": 4360689,
+      "fantasyProsId": 23096,
+      "espnProjection": 265.55383082,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.405Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4360569": {
+      "espnId": 4360569,
+      "fantasyProsId": 22969,
+      "espnProjection": 151.74335836,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.398Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3126486": {
+      "espnId": 3126486,
+      "fantasyProsId": 18244,
+      "espnProjection": 149.61199021,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.461Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3046779": {
+      "espnId": 3046779,
+      "fantasyProsId": 15501,
+      "espnProjection": 269.06403073,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.048Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4429059": {
+      "espnId": 4429059,
+      "fantasyProsId": 27520,
+      "espnProjection": 131.795456,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.926Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-2473037": {
+      "espnId": 2473037,
+      "fantasyProsId": 14003,
+      "espnProjection": 158.52167511,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:14.842Z",
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-4870653": {
+      "espnId": 4870653,
+      "fantasyProsId": 27331,
+      "espnProjection": 156.01090946,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.882Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4430834": {
+      "espnId": 4430834,
+      "fantasyProsId": 23179,
+      "espnProjection": 132.86499694,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.032Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4366031": {
+      "espnId": 4366031,
+      "fantasyProsId": 25361,
+      "espnProjection": 0,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.574Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn--16034": {
+      "espnId": -16034,
+      "fantasyProsId": 8120,
+      "espnProjection": 129.05941244,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:14.295Z",
+      "scoringNote": "ESPN default D/ST scoring, aggregate season points."
+    },
+    "espn-4426385": {
+      "espnId": 4426385,
+      "fantasyProsId": 23152,
+      "espnProjection": 133.98936764,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.734Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn--16007": {
+      "espnId": -16007,
+      "fantasyProsId": 8090,
+      "espnProjection": 130.78326275,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:14.381Z",
+      "scoringNote": "ESPN default D/ST scoring, aggregate season points."
+    },
+    "espn-4702555": {
+      "espnId": 4702555,
+      "fantasyProsId": 27320,
+      "espnProjection": 74.38760122,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.769Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3052587": {
+      "espnId": 3052587,
+      "fantasyProsId": 17237,
+      "espnProjection": 264.72767204,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.134Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-2971573": {
+      "espnId": 2971573,
+      "fantasyProsId": 15756,
+      "espnProjection": 157.76907893,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:14.919Z",
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-4361529": {
+      "espnId": 4361529,
+      "fantasyProsId": 24333,
+      "espnProjection": 71.19728946,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.475Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4362619": {
+      "espnId": 4362619,
+      "fantasyProsId": 22986,
+      "espnProjection": 71.996165,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.543Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4574716": {
+      "espnId": 4574716,
+      "fantasyProsId": 26638,
+      "espnProjection": 159.42880533,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.320Z",
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-3917792": {
+      "espnId": 3917792,
+      "fantasyProsId": 18232,
+      "espnProjection": 266.58418767,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.675Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3929645": {
+      "espnId": 3929645,
+      "fantasyProsId": 19562,
+      "espnProjection": 146.86665286,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.722Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3054850": {
+      "espnId": 3054850,
+      "fantasyProsId": 16421,
+      "espnProjection": 113.43185666,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.150Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4373626": {
+      "espnId": 4373626,
+      "fantasyProsId": 24172,
+      "espnProjection": 92.61906315,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.642Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4686658": {
+      "espnId": 4686658,
+      "fantasyProsId": 28108,
+      "espnProjection": 67.0721891,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.644Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-5081397": {
+      "espnId": 5081397,
+      "fantasyProsId": 27102,
+      "espnProjection": 88.16406842,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3046439": {
+      "espnId": 3046439,
+      "fantasyProsId": 15561,
+      "espnProjection": 150.26894117,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.045Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4036133": {
+      "espnId": 4036133,
+      "fantasyProsId": 18290,
+      "espnProjection": 158.91621814,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.854Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4596334": {
+      "espnId": 4596334,
+      "fantasyProsId": 25360,
+      "espnProjection": 93.88785547,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-15818": {
+      "espnId": 15818,
+      "fantasyProsId": 11616,
+      "espnProjection": 124.21088213,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:14.757Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3116389": {
+      "espnId": 3116389,
+      "fantasyProsId": 16423,
+      "espnProjection": 100.32797614,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4034949": {
+      "espnId": 4034949,
+      "fantasyProsId": 17575,
+      "espnProjection": 155.22506618,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.786Z",
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-4036378": {
+      "espnId": 4036378,
+      "fantasyProsId": 19246,
+      "espnProjection": 263.44221537,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.868Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4241474": {
+      "espnId": 4241474,
+      "fantasyProsId": 20094,
+      "espnProjection": 93.96950399,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.121Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4570037": {
+      "espnId": 4570037,
+      "fantasyProsId": 23091,
+      "espnProjection": 135.73480676,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.273Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4032473": {
+      "espnId": 4032473,
+      "fantasyProsId": 24687,
+      "espnProjection": 144.43662492,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.761Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4832800": {
+      "espnId": 4832800,
+      "fantasyProsId": 27339,
+      "espnProjection": 142.27109235,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4241463": {
+      "espnId": 4241463,
+      "fantasyProsId": 19201,
+      "espnProjection": 139.81347975,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.112Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3925357": {
+      "espnId": 3925357,
+      "fantasyProsId": 17258,
+      "espnProjection": 135.25103764,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4597500": {
+      "espnId": 4597500,
+      "fantasyProsId": 24357,
+      "espnProjection": 127.87001003,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4869645": {
+      "espnId": 4869645,
+      "fantasyProsId": 28135,
+      "espnProjection": 113.38908271,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4242512": {
+      "espnId": 4242512,
+      "fantasyProsId": 23499,
+      "espnProjection": 239.77663465,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:16.182Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4880281": {
+      "espnId": 4880281,
+      "fantasyProsId": 26035,
+      "espnProjection": 99.79973661,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.961Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4428718": {
+      "espnId": 4428718,
+      "fantasyProsId": 25337,
+      "espnProjection": 137.95066206,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4382466": {
+      "espnId": 4382466,
+      "fantasyProsId": 24177,
+      "espnProjection": 124.22468476,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4685247": {
+      "espnId": 4685247,
+      "fantasyProsId": 24346,
+      "espnProjection": 76.78526613,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4429013": {
+      "espnId": 4429013,
+      "fantasyProsId": 22908,
+      "espnProjection": 64.07925279,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-5083315": {
+      "espnId": 5083315,
+      "fantasyProsId": 26055,
+      "espnProjection": 146.12430601,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:18.039Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4360939": {
+      "espnId": 4360939,
+      "fantasyProsId": 19794,
+      "espnProjection": 122.33281358,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4428850": {
+      "espnId": 4428850,
+      "fantasyProsId": 24354,
+      "espnProjection": 108.66841306,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4569559": {
+      "espnId": 4569559,
+      "fantasyProsId": 26409,
+      "espnProjection": 123.38166228,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4586312": {
+      "espnId": 4586312,
+      "fantasyProsId": 27122,
+      "espnProjection": 131.62597027,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4429501": {
+      "espnId": 4429501,
+      "fantasyProsId": 26191,
+      "espnProjection": 38.19821101,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4241457": {
+      "espnId": 4241457,
+      "fantasyProsId": 19302,
+      "espnProjection": 78.45239787,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn--16023": {
+      "espnId": -16023,
+      "fantasyProsId": 8240,
+      "espnProjection": 123.05959697,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:14.335Z",
+      "scoringNote": "ESPN default D/ST scoring, aggregate season points."
+    },
+    "espn--16026": {
+      "espnId": -16026,
+      "fantasyProsId": 8260,
+      "espnProjection": 122.22190224,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:14.323Z",
+      "scoringNote": "ESPN default D/ST scoring, aggregate season points."
+    },
+    "espn--16014": {
+      "espnId": -16014,
+      "fantasyProsId": 8280,
+      "espnProjection": 124.44005893,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:14.360Z",
+      "scoringNote": "ESPN default D/ST scoring, aggregate season points."
+    },
+    "espn--16033": {
+      "espnId": -16033,
+      "fantasyProsId": 8020,
+      "espnProjection": 119.9912005,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:14.306Z",
+      "scoringNote": "ESPN default D/ST scoring, aggregate season points."
+    },
+    "espn--16021": {
+      "espnId": -16021,
+      "fantasyProsId": 8230,
+      "espnProjection": 107.07150523,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:14.341Z",
+      "scoringNote": "ESPN default D/ST scoring, aggregate season points."
+    },
+    "espn--16005": {
+      "espnId": -16005,
+      "fantasyProsId": 8070,
+      "espnProjection": 103.95198763,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:14.387Z",
+      "scoringNote": "ESPN default D/ST scoring, aggregate season points."
+    },
+    "espn--16017": {
+      "espnId": -16017,
+      "fantasyProsId": 8180,
+      "espnProjection": 100.5142522,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:14.351Z",
+      "scoringNote": "ESPN default D/ST scoring, aggregate season points."
+    },
+    "espn--16008": {
+      "espnId": -16008,
+      "fantasyProsId": 8100,
+      "espnProjection": 107.99349859,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:14.379Z",
+      "scoringNote": "ESPN default D/ST scoring, aggregate season points."
+    },
+    "espn--16012": {
+      "espnId": -16012,
+      "fantasyProsId": 8150,
+      "espnProjection": 100.41901674,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:14.366Z",
+      "scoringNote": "ESPN default D/ST scoring, aggregate season points."
+    },
+    "espn--16024": {
+      "espnId": -16024,
+      "fantasyProsId": 8250,
+      "espnProjection": 94.83224741,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:14.331Z",
+      "scoringNote": "ESPN default D/ST scoring, aggregate season points."
+    },
+    "espn-3055899": {
+      "espnId": 3055899,
+      "fantasyProsId": 16712,
+      "espnProjection": 148.76572896,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.156Z",
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-4686361": {
+      "espnId": 4686361,
+      "fantasyProsId": 26475,
+      "espnProjection": 146.93234861,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.632Z",
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-4689936": {
+      "espnId": 4689936,
+      "fantasyProsId": 26075,
+      "espnProjection": 146.10945551,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.677Z",
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-4697745": {
+      "espnId": 4697745,
+      "fantasyProsId": 27534,
+      "espnProjection": 145.93463581,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.743Z",
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-17427": {
+      "espnId": 17427,
+      "fantasyProsId": 13731,
+      "espnProjection": 144.31887638,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:14.826Z",
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-4567104": {
+      "espnId": 4567104,
+      "fantasyProsId": 26341,
+      "espnProjection": 142.49770196,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.190Z",
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-4430539": {
+      "espnId": 4430539,
+      "fantasyProsId": 25345,
+      "espnProjection": 142.57476404,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.011Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4038441": {
+      "espnId": 4038441,
+      "fantasyProsId": 18256,
+      "espnProjection": 120.09175977,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4696044": {
+      "espnId": 4696044,
+      "fantasyProsId": 28401,
+      "espnProjection": 60.37829088,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4870847": {
+      "espnId": 4870847,
+      "fantasyProsId": 27337,
+      "espnProjection": 109.68417031,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.898Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4432577": {
+      "espnId": 4432577,
+      "fantasyProsId": 23071,
+      "espnProjection": 246.0558333,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.124Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3912547": {
+      "espnId": 3912547,
+      "fantasyProsId": 17236,
+      "espnProjection": 242.53529056,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.595Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3886598": {
+      "espnId": 3886598,
+      "fantasyProsId": 19590,
+      "espnProjection": 115.0270047,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4682648": {
+      "espnId": 4682648,
+      "fantasyProsId": 27994,
+      "espnProjection": 86.26096625,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4685261": {
+      "espnId": 4685261,
+      "fantasyProsId": 26039,
+      "espnProjection": 108.71463284,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4686612": {
+      "espnId": 4686612,
+      "fantasyProsId": 26215,
+      "espnProjection": 89.85955088,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-5083754": {
+      "espnId": 5083754,
+      "fantasyProsId": 26398,
+      "espnProjection": 89.34661393,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4361411": {
+      "espnId": 4361411,
+      "fantasyProsId": 20163,
+      "espnProjection": 136.27407127,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3117256": {
+      "espnId": 3117256,
+      "fantasyProsId": 17349,
+      "espnProjection": 132.94023087,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:15.295Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4870612": {
+      "espnId": 4870612,
+      "fantasyProsId": 25419,
+      "espnProjection": 82.53510995,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4723820": {
+      "espnId": 4723820,
+      "fantasyProsId": 28127,
+      "espnProjection": 87.68904691,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4429022": {
+      "espnId": 4429022,
+      "fantasyProsId": 22989,
+      "espnProjection": 139.01877591,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4569603": {
+      "espnId": 4569603,
+      "fantasyProsId": 26314,
+      "espnProjection": 113.83694331,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4430968": {
+      "espnId": 4430968,
+      "fantasyProsId": 26355,
+      "espnProjection": 36.35400251,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4682745": {
+      "espnId": 4682745,
+      "fantasyProsId": 25987,
+      "espnProjection": 45.77919477,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4711533": {
+      "espnId": 4711533,
+      "fantasyProsId": 25984,
+      "espnProjection": 33.82883982,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4686728": {
+      "espnId": 4686728,
+      "fantasyProsId": 27109,
+      "espnProjection": 126.8677665,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4360635": {
+      "espnId": 4360635,
+      "fantasyProsId": 23982,
+      "espnProjection": 120.94460133,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4576297": {
+      "espnId": 4576297,
+      "fantasyProsId": 26335,
+      "espnProjection": 113.75689806,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4685720": {
+      "espnId": 4685720,
+      "fantasyProsId": 22900,
+      "espnProjection": 238.15304859,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.608Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4688380": {
+      "espnId": 4688380,
+      "fantasyProsId": 24755,
+      "espnProjection": 219.56489345,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-2578570": {
+      "espnId": 2578570,
+      "fantasyProsId": 15642,
+      "espnProjection": 198.53317561,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3915411": {
+      "espnId": 3915411,
+      "fantasyProsId": 18406,
+      "espnProjection": 84.90616064,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3149687": {
+      "espnId": 3149687,
+      "fantasyProsId": 25823,
+      "espnProjection": 70.8095271,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-2977187": {
+      "espnId": 2977187,
+      "fantasyProsId": 16433,
+      "espnProjection": 101.50020485,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4596602": {
+      "espnId": 4596602,
+      "fantasyProsId": 27259,
+      "espnProjection": 59.65474911,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4240603": {
+      "espnId": 4240603,
+      "fantasyProsId": 24205,
+      "espnProjection": 57.59972082,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4430034": {
+      "espnId": 4430034,
+      "fantasyProsId": 26136,
+      "espnProjection": 94.01409975,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4361409": {
+      "espnId": 4361409,
+      "fantasyProsId": 23101,
+      "espnProjection": 92.7672717,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4686422": {
+      "espnId": 4686422,
+      "fantasyProsId": 25332,
+      "espnProjection": 91.13769286,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4249417": {
+      "espnId": 4249417,
+      "fantasyProsId": 23770,
+      "espnProjection": 89.49546457,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4869961": {
+      "espnId": 4869961,
+      "fantasyProsId": 26038,
+      "espnProjection": 88.39566876,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4427095": {
+      "espnId": 4427095,
+      "fantasyProsId": 25304,
+      "espnProjection": 81.51501718,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3916945": {
+      "espnId": 3916945,
+      "fantasyProsId": 18706,
+      "espnProjection": 80.08603982,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-5081432": {
+      "espnId": 5081432,
+      "fantasyProsId": 25418,
+      "espnProjection": 77.65433474,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn--16027": {
+      "espnId": -16027,
+      "fantasyProsId": 8290,
+      "espnProjection": 92.96866463,
+      "scoringNote": "ESPN default D/ST scoring, aggregate season points."
+    },
+    "espn--16009": {
+      "espnId": -16009,
+      "fantasyProsId": 8110,
+      "espnProjection": 90.30158507,
+      "scoringNote": "ESPN default D/ST scoring, aggregate season points."
+    },
+    "espn-17372": {
+      "espnId": 17372,
+      "fantasyProsId": 13029,
+      "espnProjection": 142.75478025,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:14.824Z",
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-3150744": {
+      "espnId": 3150744,
+      "fantasyProsId": 19058,
+      "espnProjection": 142.20124553,
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-4832955": {
+      "espnId": 4832955,
+      "fantasyProsId": 28107,
+      "espnProjection": 53.87127272,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4695404": {
+      "espnId": 4695404,
+      "fantasyProsId": 25977,
+      "espnProjection": 51.05088157,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4383429": {
+      "espnId": 4383429,
+      "fantasyProsId": 25693,
+      "espnProjection": 49.15223473,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4911851": {
+      "espnId": 4911851,
+      "fantasyProsId": 27285,
+      "espnProjection": 43.91274181,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4429835": {
+      "espnId": 4429835,
+      "fantasyProsId": 22915,
+      "espnProjection": 41.46249862,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4360516": {
+      "espnId": 4360516,
+      "fantasyProsId": 22980,
+      "espnProjection": 40.87493941,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4430871": {
+      "espnId": 4430871,
+      "fantasyProsId": 23679,
+      "espnProjection": 36.95001086,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4686468": {
+      "espnId": 4686468,
+      "fantasyProsId": 23079,
+      "espnProjection": 36.39045574,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4685397": {
+      "espnId": 4685397,
+      "fantasyProsId": 27310,
+      "espnProjection": 29.14798839,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4431545": {
+      "espnId": 4431545,
+      "fantasyProsId": 22930,
+      "espnProjection": 28.19306792,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4887558": {
+      "espnId": 4887558,
+      "fantasyProsId": 25885,
+      "espnProjection": 9.91498083,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4362478": {
+      "espnId": 4362478,
+      "fantasyProsId": 25654,
+      "espnProjection": 24.5791575,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4362921": {
+      "espnId": 4362921,
+      "fantasyProsId": 22913,
+      "espnProjection": 77.28949104,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4635008": {
+      "espnId": 4635008,
+      "fantasyProsId": 26019,
+      "espnProjection": 75.51022122,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn--16030": {
+      "espnId": -16030,
+      "fantasyProsId": 8140,
+      "espnProjection": 78.44575699,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:14.310Z",
+      "scoringNote": "ESPN default D/ST scoring, aggregate season points."
+    },
+    "espn--16018": {
+      "espnId": -16018,
+      "fantasyProsId": 8190,
+      "espnProjection": 89.05439811,
+      "scoringNote": "ESPN default D/ST scoring, aggregate season points."
+    },
+    "espn-4360234": {
+      "espnId": 4360234,
+      "fantasyProsId": 23297,
+      "espnProjection": 141.84332141,
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-10621": {
+      "espnId": 10621,
+      "fantasyProsId": 9491,
+      "espnProjection": 141.26710601,
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-4367209": {
+      "espnId": 4367209,
+      "fantasyProsId": 23153,
+      "espnProjection": 118.96295799,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-2576925": {
+      "espnId": 2576925,
+      "fantasyProsId": 14104,
+      "espnProjection": 114.4882306,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4243331": {
+      "espnId": 4243331,
+      "fantasyProsId": 23181,
+      "espnProjection": 102.08702502,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-5123663": {
+      "espnId": 5123663,
+      "fantasyProsId": 27446,
+      "espnProjection": 72.95517986,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4600981": {
+      "espnId": 4600981,
+      "fantasyProsId": 27211,
+      "espnProjection": 72.74866247,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4686472": {
+      "espnId": 4686472,
+      "fantasyProsId": 23080,
+      "espnProjection": 70.0145951,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4368003": {
+      "espnId": 4368003,
+      "fantasyProsId": 25335,
+      "espnProjection": 67.64691006,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4819231": {
+      "espnId": 4819231,
+      "fantasyProsId": 27165,
+      "espnProjection": 7.89467342,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4685555": {
+      "espnId": 4685555,
+      "fantasyProsId": 24343,
+      "espnProjection": 19.78849696,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-15864": {
+      "espnId": 15864,
+      "fantasyProsId": 11687,
+      "espnProjection": 233.16272396,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4837248": {
+      "espnId": 4837248,
+      "fantasyProsId": 28013,
+      "espnProjection": 187.51039473,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.849Z",
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-8439": {
+      "espnId": 8439,
+      "fantasyProsId": 9001,
+      "espnProjection": 218.83449964,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3122840": {
+      "espnId": 3122840,
+      "fantasyProsId": 16398,
+      "espnProjection": 78.21072728,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4685307": {
+      "espnId": 4685307,
+      "fantasyProsId": 28067,
+      "espnProjection": 66.97368549,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3676833": {
+      "espnId": 3676833,
+      "fantasyProsId": 18520,
+      "espnProjection": 66.36387281,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4603186": {
+      "espnId": 4603186,
+      "fantasyProsId": 27224,
+      "espnProjection": 65.92311227,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4597703": {
+      "espnId": 4597703,
+      "fantasyProsId": 26022,
+      "espnProjection": 65.4757054,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4599739": {
+      "espnId": 4599739,
+      "fantasyProsId": 24360,
+      "espnProjection": 18.6276449,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4429299": {
+      "espnId": 4429299,
+      "fantasyProsId": 26212,
+      "espnProjection": 18.35507816,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4832846": {
+      "espnId": 4832846,
+      "fantasyProsId": 28084,
+      "espnProjection": 16.87430371,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4690013": {
+      "espnId": 4690013,
+      "fantasyProsId": 25983,
+      "espnProjection": 16.48655216,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4685246": {
+      "espnId": 4685246,
+      "fantasyProsId": 24362,
+      "espnProjection": 15.70370272,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4874509": {
+      "espnId": 4874509,
+      "fantasyProsId": 27097,
+      "espnProjection": 15.49010149,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4912274": {
+      "espnId": 4912274,
+      "fantasyProsId": 26309,
+      "espnProjection": 7.0068814,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4035537": {
+      "espnId": 4035537,
+      "fantasyProsId": 23249,
+      "espnProjection": 2.28550639,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-5220680": {
+      "espnId": 5220680,
+      "fantasyProsId": 28130,
+      "espnProjection": 64.91637032,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn--16020": {
+      "espnId": -16020,
+      "fantasyProsId": 8210,
+      "espnProjection": 82.59347607,
+      "scoringNote": "ESPN default D/ST scoring, aggregate season points."
+    },
+    "espn--16025": {
+      "espnId": -16025,
+      "fantasyProsId": 8270,
+      "espnProjection": 83.14879037,
+      "scoringNote": "ESPN default D/ST scoring, aggregate season points."
+    },
+    "espn-4869461": {
+      "espnId": 4869461,
+      "fantasyProsId": 28507,
+      "espnProjection": 144.28442693,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:17.860Z",
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-4571557": {
+      "espnId": 4571557,
+      "fantasyProsId": 26763,
+      "espnProjection": 139.55631868,
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-3051876": {
+      "espnId": 3051876,
+      "fantasyProsId": 16411,
+      "espnProjection": 106.4934276,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3123076": {
+      "espnId": 3123076,
+      "fantasyProsId": 16399,
+      "espnProjection": 104.33621269,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4595342": {
+      "espnId": 4595342,
+      "fantasyProsId": 25997,
+      "espnProjection": 77.24909335,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3116164": {
+      "espnId": 3116164,
+      "fantasyProsId": 17272,
+      "espnProjection": 96.45723873,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4429086": {
+      "espnId": 4429086,
+      "fantasyProsId": 23056,
+      "espnProjection": 80.94154104,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4040655": {
+      "espnId": 4040655,
+      "fantasyProsId": 19810,
+      "espnProjection": 63.69121144,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-2991662": {
+      "espnId": 2991662,
+      "fantasyProsId": 16489,
+      "espnProjection": 56.66862899,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4241479": {
+      "espnId": 4241479,
+      "fantasyProsId": 19198,
+      "espnProjection": 115.24569583,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn--16006": {
+      "espnId": -16006,
+      "fantasyProsId": 8080,
+      "espnProjection": 78.12499662,
+      "adpSource": "ESPN platform ADP",
+      "adpUpdatedAt": "2026-09-06T12:30:14.384Z",
+      "scoringNote": "ESPN default D/ST scoring, aggregate season points."
+    },
+    "espn--16011": {
+      "espnId": -16011,
+      "fantasyProsId": 8130,
+      "espnProjection": 76.07255882,
+      "scoringNote": "ESPN default D/ST scoring, aggregate season points."
+    },
+    "espn--16016": {
+      "espnId": -16016,
+      "fantasyProsId": 8170,
+      "espnProjection": 74.38189954,
+      "scoringNote": "ESPN default D/ST scoring, aggregate season points."
+    },
+    "espn--16004": {
+      "espnId": -16004,
+      "fantasyProsId": 8060,
+      "espnProjection": 72.35901443,
+      "scoringNote": "ESPN default D/ST scoring, aggregate season points."
+    },
+    "espn-4432762": {
+      "espnId": 4432762,
+      "fantasyProsId": 25968,
+      "espnProjection": 142.55510857,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-14880": {
+      "espnId": 14880,
+      "fantasyProsId": 11177,
+      "espnProjection": 45.81156737,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4427728": {
+      "espnId": 4427728,
+      "fantasyProsId": 24901,
+      "espnProjection": 0.81706837,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4366963": {
+      "espnId": 4366963,
+      "fantasyProsId": 26194,
+      "espnProjection": 0.66509464,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4362748": {
+      "espnId": 4362748,
+      "fantasyProsId": 23812,
+      "espnProjection": 0.35280446,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-2576336": {
+      "espnId": 2576336,
+      "fantasyProsId": 13924,
+      "espnProjection": 1.60686855,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4685526": {
+      "espnId": 4685526,
+      "fantasyProsId": 24367,
+      "espnProjection": 0,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3045147": {
+      "espnId": 3045147,
+      "fantasyProsId": 16447,
+      "espnProjection": 0,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4360423": {
+      "espnId": 4360423,
+      "fantasyProsId": 22973,
+      "espnProjection": 113.20608226,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4259147": {
+      "espnId": 4259147,
+      "fantasyProsId": 24778,
+      "espnProjection": 20.33004943,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4242557": {
+      "espnId": 4242557,
+      "fantasyProsId": 19372,
+      "espnProjection": 75.33963933,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4427834": {
+      "espnId": 4427834,
+      "fantasyProsId": 23837,
+      "espnProjection": 70.58566714,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4430802": {
+      "espnId": 4430802,
+      "fantasyProsId": 22967,
+      "espnProjection": 72.44355904,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4433970": {
+      "espnId": 4433970,
+      "fantasyProsId": 23018,
+      "espnProjection": 10.07467551,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4430841": {
+      "espnId": 4430841,
+      "fantasyProsId": 22953,
+      "espnProjection": 29.30053165,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4362887": {
+      "espnId": 4362887,
+      "fantasyProsId": 19781,
+      "espnProjection": 10.64103585,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-11252": {
+      "espnId": 11252,
+      "fantasyProsId": 9300,
+      "espnProjection": 10.52102039,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4241464": {
+      "espnId": 4241464,
+      "fantasyProsId": 20156,
+      "espnProjection": 8.60717981,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4429275": {
+      "espnId": 4429275,
+      "fantasyProsId": 25388,
+      "espnProjection": 0,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4693370": {
+      "espnId": 4693370,
+      "espnProjection": 8.10721687,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3930086": {
+      "espnId": 3930086,
+      "fantasyProsId": 18631,
+      "espnProjection": 68.24722754,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4678006": {
+      "espnId": 4678006,
+      "fantasyProsId": 23004,
+      "espnProjection": 60.60368443,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4808766": {
+      "espnId": 4808766,
+      "fantasyProsId": 26005,
+      "espnProjection": 70.36266288,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4429148": {
+      "espnId": 4429148,
+      "fantasyProsId": 23104,
+      "espnProjection": 61.54616362,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4258595": {
+      "espnId": 4258595,
+      "fantasyProsId": 19229,
+      "espnProjection": 53.85857427,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4431588": {
+      "espnId": 4431588,
+      "fantasyProsId": 24334,
+      "espnProjection": 42.25451675,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4240472": {
+      "espnId": 4240472,
+      "fantasyProsId": 19539,
+      "espnProjection": 60.72666841,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4431574": {
+      "espnId": 4431574,
+      "fantasyProsId": 23144,
+      "espnProjection": 28.97843642,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-2573401": {
+      "espnId": 2573401,
+      "fantasyProsId": 15623,
+      "espnProjection": 38.07924164,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4833029": {
+      "espnId": 4833029,
+      "fantasyProsId": 27993,
+      "espnProjection": 9.94484931,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3127310": {
+      "espnId": 3127310,
+      "fantasyProsId": 18561,
+      "espnProjection": 48.51138217,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4831959": {
+      "espnId": 4831959,
+      "fantasyProsId": 28154,
+      "espnProjection": 46.45474959,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4685522": {
+      "espnId": 4685522,
+      "fantasyProsId": 25368,
+      "espnProjection": 10.03220887,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-2969939": {
+      "espnId": 2969939,
+      "fantasyProsId": 13891,
+      "espnProjection": 8.62379494,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4596472": {
+      "espnId": 4596472,
+      "espnProjection": 10.46192566,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3892775": {
+      "espnId": 3892775,
+      "espnProjection": 10.42034432,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4240391": {
+      "espnId": 4240391,
+      "espnProjection": 10.33340805,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-2576980": {
+      "espnId": 2576980,
+      "fantasyProsId": 13890,
+      "espnProjection": 10.18551505,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4434153": {
+      "espnId": 4434153,
+      "fantasyProsId": 25321,
+      "espnProjection": 10.10889759,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4426875": {
+      "espnId": 4426875,
+      "espnProjection": 9.52243984,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4685201": {
+      "espnId": 4685201,
+      "espnProjection": 9.47056733,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3050478": {
+      "espnId": 3050478,
+      "fantasyProsId": 16540,
+      "espnProjection": 135.71682201,
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-3051909": {
+      "espnId": 3051909,
+      "fantasyProsId": 17420,
+      "espnProjection": 137.83877876,
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-2985659": {
+      "espnId": 2985659,
+      "fantasyProsId": 16026,
+      "espnProjection": 135.77328759,
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-3917232": {
+      "espnId": 3917232,
+      "fantasyProsId": 19760,
+      "espnProjection": 136.95984575,
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-5082424": {
+      "espnId": 5082424,
+      "fantasyProsId": 28176,
+      "espnProjection": 133.16773453,
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-5081335": {
+      "espnId": 5081335,
+      "fantasyProsId": 28175,
+      "espnProjection": 133.60397423,
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-4569923": {
+      "espnId": 4569923,
+      "fantasyProsId": 27291,
+      "espnProjection": 129.30301838,
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-4243371": {
+      "espnId": 4243371,
+      "espnProjection": 127.56923197,
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-4249087": {
+      "espnId": 4249087,
+      "espnProjection": 125.09511447,
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-4568263": {
+      "espnId": 4568263,
+      "fantasyProsId": 27261,
+      "espnProjection": 124.24949595,
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-3124084": {
+      "espnId": 3124084,
+      "fantasyProsId": 19028,
+      "espnProjection": 123.28333903,
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-4363538": {
+      "espnId": 4363538,
+      "fantasyProsId": 25354,
+      "espnProjection": 121.51969315,
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-4258620": {
+      "espnId": 4258620,
+      "espnProjection": 121.58830576,
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-4259619": {
+      "espnId": 4259619,
+      "fantasyProsId": 25533,
+      "espnProjection": 119.87971992,
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn--16019": {
+      "espnId": -16019,
+      "fantasyProsId": 8200,
+      "espnProjection": 79.3393778,
+      "scoringNote": "ESPN default D/ST scoring, aggregate season points."
+    },
+    "espn--16003": {
+      "espnId": -16003,
+      "fantasyProsId": 8050,
+      "espnProjection": 71.14289837,
+      "scoringNote": "ESPN default D/ST scoring, aggregate season points."
+    },
+    "espn--16010": {
+      "espnId": -16010,
+      "fantasyProsId": 8300,
+      "espnProjection": 68.359154,
+      "scoringNote": "ESPN default D/ST scoring, aggregate season points."
+    },
+    "espn--16029": {
+      "espnId": -16029,
+      "fantasyProsId": 8040,
+      "espnProjection": 73.90878415,
+      "scoringNote": "ESPN default D/ST scoring, aggregate season points."
+    },
+    "espn--16028": {
+      "espnId": -16028,
+      "fantasyProsId": 8310,
+      "espnProjection": 60.76872635,
+      "scoringNote": "ESPN default D/ST scoring, aggregate season points."
+    },
+    "espn--16001": {
+      "espnId": -16001,
+      "fantasyProsId": 8010,
+      "espnProjection": 58.42415963,
+      "scoringNote": "ESPN default D/ST scoring, aggregate season points."
+    },
+    "espn--16002": {
+      "espnId": -16002,
+      "fantasyProsId": 8030,
+      "espnProjection": 58.96557673,
+      "scoringNote": "ESPN default D/ST scoring, aggregate season points."
+    },
+    "espn--16013": {
+      "espnId": -16013,
+      "fantasyProsId": 8220,
+      "espnProjection": 53.85949642,
+      "scoringNote": "ESPN default D/ST scoring, aggregate season points."
+    },
+    "espn--16022": {
+      "espnId": -16022,
+      "fantasyProsId": 8000,
+      "espnProjection": 50.36441707,
+      "scoringNote": "ESPN default D/ST scoring, aggregate season points."
+    },
+    "espn--16015": {
+      "espnId": -16015,
+      "fantasyProsId": 8160,
+      "espnProjection": 45.11280536,
+      "scoringNote": "ESPN default D/ST scoring, aggregate season points."
+    },
+    "espn-5150247": {
+      "espnId": 5150247,
+      "fantasyProsId": 26012,
+      "espnProjection": 56.54933268,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4912218": {
+      "espnId": 4912218,
+      "fantasyProsId": 28424,
+      "espnProjection": 52.80644981,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4613202": {
+      "espnId": 4613202,
+      "fantasyProsId": 27487,
+      "espnProjection": 50.75043171,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4431280": {
+      "espnId": 4431280,
+      "fantasyProsId": 23092,
+      "espnProjection": 50.69009409,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4242433": {
+      "espnId": 4242433,
+      "fantasyProsId": 22845,
+      "espnProjection": 50.31493922,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3045523": {
+      "espnId": 3045523,
+      "fantasyProsId": 17066,
+      "espnProjection": 50.23908021,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-2973405": {
+      "espnId": 2973405,
+      "fantasyProsId": 16081,
+      "espnProjection": 48.11264806,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4361577": {
+      "espnId": 4361577,
+      "fantasyProsId": 20113,
+      "espnProjection": 46.87486804,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4567156": {
+      "espnId": 4567156,
+      "fantasyProsId": 22905,
+      "espnProjection": 44.85521018,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-16002": {
+      "espnId": 16002,
+      "fantasyProsId": 11798,
+      "espnProjection": 44.68204874,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4696882": {
+      "espnId": 4696882,
+      "fantasyProsId": 26011,
+      "espnProjection": 43.90588235,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4372780": {
+      "espnId": 4372780,
+      "fantasyProsId": 22795,
+      "espnProjection": 43.58046764,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3043275": {
+      "espnId": 3043275,
+      "fantasyProsId": 15581,
+      "espnProjection": 43.44925538,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4879276": {
+      "espnId": 4879276,
+      "fantasyProsId": 28129,
+      "espnProjection": 42.95907025,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4426844": {
+      "espnId": 4426844,
+      "fantasyProsId": 23119,
+      "espnProjection": 42.92463381,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4431487": {
+      "espnId": 4431487,
+      "fantasyProsId": 27144,
+      "espnProjection": 41.85872326,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3054212": {
+      "espnId": 3054212,
+      "fantasyProsId": 16460,
+      "espnProjection": 41.0059843,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4880236": {
+      "espnId": 4880236,
+      "fantasyProsId": 28403,
+      "espnProjection": 39.8437069,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4036131": {
+      "espnId": 4036131,
+      "fantasyProsId": 17527,
+      "espnProjection": 39.70971756,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4431268": {
+      "espnId": 4431268,
+      "fantasyProsId": 27315,
+      "espnProjection": 39.61272863,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3921690": {
+      "espnId": 3921690,
+      "fantasyProsId": 18487,
+      "espnProjection": 38.56653545,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3911853": {
+      "espnId": 3911853,
+      "fantasyProsId": 19423,
+      "espnProjection": 38.41704042,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4869748": {
+      "espnId": 4869748,
+      "fantasyProsId": 28132,
+      "espnProjection": 36.34783985,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4241263": {
+      "espnId": 4241263,
+      "fantasyProsId": 22756,
+      "espnProjection": 36.18882891,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4808839": {
+      "espnId": 4808839,
+      "fantasyProsId": 24371,
+      "espnProjection": 34.85417683,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4426496": {
+      "espnId": 4426496,
+      "fantasyProsId": 25269,
+      "espnProjection": 34.69486655,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4048228": {
+      "espnId": 4048228,
+      "fantasyProsId": 22833,
+      "espnProjection": 34.51118368,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4241372": {
+      "espnId": 4241372,
+      "fantasyProsId": 18226,
+      "espnProjection": 34.26975469,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4683153": {
+      "espnId": 4683153,
+      "fantasyProsId": 28126,
+      "espnProjection": 34.10801248,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3917914": {
+      "espnId": 3917914,
+      "fantasyProsId": 18864,
+      "espnProjection": 32.31739189,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4061956": {
+      "espnId": 4061956,
+      "fantasyProsId": 18656,
+      "espnProjection": 31.66915961,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4569371": {
+      "espnId": 4569371,
+      "fantasyProsId": 26379,
+      "espnProjection": 31.07192284,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4360797": {
+      "espnId": 4360797,
+      "fantasyProsId": 20126,
+      "espnProjection": 30.89126722,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-5092508": {
+      "espnId": 5092508,
+      "fantasyProsId": 26037,
+      "espnProjection": 29.57263219,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4431492": {
+      "espnId": 4431492,
+      "fantasyProsId": 28896,
+      "espnProjection": 28.8446155,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4602667": {
+      "espnId": 4602667,
+      "fantasyProsId": 27454,
+      "espnProjection": 28.5097858,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4372096": {
+      "espnId": 4372096,
+      "fantasyProsId": 25267,
+      "espnProjection": 27.67721524,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-2998565": {
+      "espnId": 2998565,
+      "espnProjection": 27.53685273,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4685553": {
+      "espnId": 4685553,
+      "fantasyProsId": 28133,
+      "espnProjection": 27.51912248,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4573699": {
+      "espnId": 4573699,
+      "fantasyProsId": 27469,
+      "espnProjection": 27.45780275,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4361516": {
+      "espnId": 4361516,
+      "fantasyProsId": 24238,
+      "espnProjection": 26.7365962,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4690923": {
+      "espnId": 4690923,
+      "fantasyProsId": 26310,
+      "espnProjection": 26.58094101,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4361372": {
+      "espnId": 4361372,
+      "fantasyProsId": 23742,
+      "espnProjection": 25.37855066,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-5088338": {
+      "espnId": 5088338,
+      "fantasyProsId": 27463,
+      "espnProjection": 25.11475898,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4383396": {
+      "espnId": 4383396,
+      "fantasyProsId": 25941,
+      "espnProjection": 25.05598078,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-16733": {
+      "espnId": 16733,
+      "fantasyProsId": 12127,
+      "espnProjection": 24.01907876,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4883647": {
+      "espnId": 4883647,
+      "fantasyProsId": 27059,
+      "espnProjection": 23.90866476,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3052897": {
+      "espnId": 3052897,
+      "fantasyProsId": 17508,
+      "espnProjection": 23.55535698,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4569382": {
+      "espnId": 4569382,
+      "fantasyProsId": 23135,
+      "espnProjection": 21.78627676,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4608810": {
+      "espnId": 4608810,
+      "fantasyProsId": 27147,
+      "espnProjection": 21.55889369,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4708486": {
+      "espnId": 4708486,
+      "fantasyProsId": 27294,
+      "espnProjection": 21.25041987,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4698597": {
+      "espnId": 4698597,
+      "fantasyProsId": 25416,
+      "espnProjection": 20.80569017,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4426553": {
+      "espnId": 4426553,
+      "espnProjection": 19.52080673,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4710855": {
+      "espnId": 4710855,
+      "fantasyProsId": 27449,
+      "espnProjection": 19.45388927,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3843945": {
+      "espnId": 3843945,
+      "fantasyProsId": 18397,
+      "espnProjection": 19.01282696,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3043116": {
+      "espnId": 3043116,
+      "fantasyProsId": 15665,
+      "espnProjection": 18.96096764,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4383440": {
+      "espnId": 4383440,
+      "espnProjection": 18.7009686,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4242392": {
+      "espnId": 4242392,
+      "fantasyProsId": 23341,
+      "espnProjection": 18.61501162,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4686248": {
+      "espnId": 4686248,
+      "fantasyProsId": 28427,
+      "espnProjection": 18.48316941,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4426948": {
+      "espnId": 4426948,
+      "fantasyProsId": 26328,
+      "espnProjection": 18.42518966,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-5082630": {
+      "espnId": 5082630,
+      "fantasyProsId": 27076,
+      "espnProjection": 18.31931254,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4430870": {
+      "espnId": 4430870,
+      "fantasyProsId": 24372,
+      "espnProjection": 18.1393519,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4372505": {
+      "espnId": 4372505,
+      "espnProjection": 18.07684798,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4702559": {
+      "espnId": 4702559,
+      "fantasyProsId": 25430,
+      "espnProjection": 17.98941167,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3051889": {
+      "espnId": 3051889,
+      "espnProjection": 17.30834571,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3917668": {
+      "espnId": 3917668,
+      "fantasyProsId": 18571,
+      "espnProjection": 16.37512451,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4259305": {
+      "espnId": 4259305,
+      "espnProjection": 16.1419764,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4714379": {
+      "espnId": 4714379,
+      "espnProjection": 15.87722896,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4362018": {
+      "espnId": 4362018,
+      "espnProjection": 15.47797111,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4613104": {
+      "espnId": 4613104,
+      "espnProjection": 13.55129183,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4245144": {
+      "espnId": 4245144,
+      "fantasyProsId": 24029,
+      "espnProjection": 13.14145212,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4362477": {
+      "espnId": 4362477,
+      "espnProjection": 11.67485199,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4386544": {
+      "espnId": 4386544,
+      "fantasyProsId": 25627,
+      "espnProjection": 11.56485381,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3929914": {
+      "espnId": 3929914,
+      "espnProjection": 10.49771428,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4575665": {
+      "espnId": 4575665,
+      "fantasyProsId": 25289,
+      "espnProjection": 10.42339688,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4241961": {
+      "espnId": 4241961,
+      "espnProjection": 10.26017897,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4384852": {
+      "espnId": 4384852,
+      "fantasyProsId": 28178,
+      "espnProjection": 10.17572042,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-2515270": {
+      "espnId": 2515270,
+      "espnProjection": 10.09973836,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4695193": {
+      "espnId": 4695193,
+      "espnProjection": 10.08463746,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4360086": {
+      "espnId": 4360086,
+      "espnProjection": 10.0066221,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4878695": {
+      "espnId": 4878695,
+      "fantasyProsId": 28434,
+      "espnProjection": 9.65971968,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4360967": {
+      "espnId": 4360967,
+      "espnProjection": 9.47359586,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4714771": {
+      "espnId": 4714771,
+      "fantasyProsId": 24345,
+      "espnProjection": 9.45849958,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-14163": {
+      "espnId": 14163,
+      "fantasyProsId": 10007,
+      "espnProjection": 9.45199677,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4383351": {
+      "espnId": 4383351,
+      "fantasyProsId": 20082,
+      "espnProjection": 9.42810754,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4683423": {
+      "espnId": 4683423,
+      "fantasyProsId": 25373,
+      "espnProjection": 9.38587263,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4889929": {
+      "espnId": 4889929,
+      "fantasyProsId": 23680,
+      "espnProjection": 9.37966621,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4917427": {
+      "espnId": 4917427,
+      "fantasyProsId": 27499,
+      "espnProjection": 9.22946517,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3915486": {
+      "espnId": 3915486,
+      "espnProjection": 9.18954634,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4034779": {
+      "espnId": 4034779,
+      "espnProjection": 9.09829771,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4240703": {
+      "espnId": 4240703,
+      "espnProjection": 9.07615025,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4565185": {
+      "espnId": 4565185,
+      "fantasyProsId": 27182,
+      "espnProjection": 9.03858523,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4879194": {
+      "espnId": 4879194,
+      "fantasyProsId": 28137,
+      "espnProjection": 8.96665675,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4426339": {
+      "espnId": 4426339,
+      "espnProjection": 8.94973377,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4695705": {
+      "espnId": 4695705,
+      "fantasyProsId": 28157,
+      "espnProjection": 8.88033185,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4040612": {
+      "espnId": 4040612,
+      "espnProjection": 8.83194535,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4722908": {
+      "espnId": 4722908,
+      "espnProjection": 8.81890022,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4685504": {
+      "espnId": 4685504,
+      "fantasyProsId": 28161,
+      "espnProjection": 8.73967357,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-5160110": {
+      "espnId": 5160110,
+      "fantasyProsId": 27810,
+      "espnProjection": 8.70016514,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3044720": {
+      "espnId": 3044720,
+      "espnProjection": 8.65893635,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4035671": {
+      "espnId": 4035671,
+      "espnProjection": 8.6431953,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4432260": {
+      "espnId": 4432260,
+      "espnProjection": 8.62671198,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4876132": {
+      "espnId": 4876132,
+      "espnProjection": 8.62671198,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-2975863": {
+      "espnId": 2975863,
+      "espnProjection": 8.62272876,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4715355": {
+      "espnId": 4715355,
+      "espnProjection": 8.499707,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3125107": {
+      "espnId": 3125107,
+      "espnProjection": 8.43301887,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4426485": {
+      "espnId": 4426485,
+      "espnProjection": 8.37022532,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4242546": {
+      "espnId": 4242546,
+      "fantasyProsId": 22799,
+      "espnProjection": 8.37243635,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4239944": {
+      "espnId": 4239944,
+      "espnProjection": 8.35877946,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4045305": {
+      "espnId": 4045305,
+      "espnProjection": 8.28295682,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4401805": {
+      "espnId": 4401805,
+      "espnProjection": 8.24491814,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4035020": {
+      "espnId": 4035020,
+      "espnProjection": 8.23934114,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4685413": {
+      "espnId": 4685413,
+      "fantasyProsId": 24361,
+      "espnProjection": 8.24166712,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3052096": {
+      "espnId": 3052096,
+      "espnProjection": 8.22217011,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4685540": {
+      "espnId": 4685540,
+      "espnProjection": 8.1832798,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4869132": {
+      "espnId": 4869132,
+      "fantasyProsId": 28141,
+      "espnProjection": 8.08513733,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3115293": {
+      "espnId": 3115293,
+      "espnProjection": 8.08173836,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4433971": {
+      "espnId": 4433971,
+      "espnProjection": 8.03878567,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4360763": {
+      "espnId": 4360763,
+      "espnProjection": 7.98795004,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3924327": {
+      "espnId": 3924327,
+      "espnProjection": 7.98321596,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4039505": {
+      "espnId": 4039505,
+      "fantasyProsId": 19844,
+      "espnProjection": 7.96011243,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3039707": {
+      "espnId": 3039707,
+      "fantasyProsId": 16381,
+      "espnProjection": 7.75684412,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-2975417": {
+      "espnId": 2975417,
+      "fantasyProsId": 17145,
+      "espnProjection": 7.36066289,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4038524": {
+      "espnId": 4038524,
+      "fantasyProsId": 18562,
+      "espnProjection": 7.13274108,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-2531358": {
+      "espnId": 2531358,
+      "espnProjection": 4.13123375,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-5081338": {
+      "espnId": 5081338,
+      "fantasyProsId": 28435,
+      "espnProjection": 4.06577031,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4035656": {
+      "espnId": 4035656,
+      "espnProjection": 3.88186013,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-5097554": {
+      "espnId": 5097554,
+      "espnProjection": 3.69807116,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4429105": {
+      "espnId": 4429105,
+      "espnProjection": 3.5162334,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3123075": {
+      "espnId": 3123075,
+      "espnProjection": 2.48463618,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4373273": {
+      "espnId": 4373273,
+      "fantasyProsId": 26748,
+      "espnProjection": 2.3656599,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4570738": {
+      "espnId": 4570738,
+      "espnProjection": 2.06740031,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4430656": {
+      "espnId": 4430656,
+      "espnProjection": 1.93946075,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4690143": {
+      "espnId": 4690143,
+      "espnProjection": 1.86903872,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4039050": {
+      "espnId": 4039050,
+      "espnProjection": 1.72141591,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4372716": {
+      "espnId": 4372716,
+      "espnProjection": 1.41915173,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4430191": {
+      "espnId": 4430191,
+      "espnProjection": 0.39934945,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4692835": {
+      "espnId": 4692835,
+      "espnProjection": 0.28747999,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4040761": {
+      "espnId": 4040761,
+      "fantasyProsId": 18280,
+      "espnProjection": 0,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3895856": {
+      "espnId": 3895856,
+      "fantasyProsId": 17268,
+      "espnProjection": 0,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4241410": {
+      "espnId": 4241410,
+      "fantasyProsId": 23829,
+      "espnProjection": 0,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4428085": {
+      "espnId": 4428085,
+      "fantasyProsId": 25282,
+      "espnProjection": 0,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4372561": {
+      "espnId": 4372561,
+      "fantasyProsId": 26392,
+      "espnProjection": 0,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4685350": {
+      "espnId": 4685350,
+      "fantasyProsId": 25393,
+      "espnProjection": 0,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4432775": {
+      "espnId": 4432775,
+      "fantasyProsId": 27288,
+      "espnProjection": 0,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4683243": {
+      "espnId": 4683243,
+      "fantasyProsId": 27138,
+      "espnProjection": 0,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4682652": {
+      "espnId": 4682652,
+      "fantasyProsId": 23682,
+      "espnProjection": 0,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-5091739": {
+      "espnId": 5091739,
+      "fantasyProsId": 28047,
+      "espnProjection": 0,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4605951": {
+      "espnId": 4605951,
+      "fantasyProsId": 28125,
+      "espnProjection": 0,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4912052": {
+      "espnId": 4912052,
+      "fantasyProsId": 28079,
+      "espnProjection": 0,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4037235": {
+      "espnId": 4037235,
+      "fantasyProsId": 18585,
+      "espnProjection": 0,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3124679": {
+      "espnId": 3124679,
+      "fantasyProsId": 17533,
+      "espnProjection": 0,
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-16339": {
+      "espnId": 16339,
+      "fantasyProsId": 13274,
+      "espnProjection": 0,
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-3050481": {
+      "espnId": 3050481,
+      "fantasyProsId": 17826,
+      "espnProjection": 0,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4241802": {
+      "espnId": 4241802,
+      "fantasyProsId": 19219,
+      "espnProjection": 0,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3929785": {
+      "espnId": 3929785,
+      "fantasyProsId": 19747,
+      "espnProjection": 0,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4372019": {
+      "espnId": 4372019,
+      "fantasyProsId": 22921,
+      "espnProjection": 0,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4369863": {
+      "espnId": 4369863,
+      "fantasyProsId": 25287,
+      "espnProjection": 0,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4429939": {
+      "espnId": 4429939,
+      "fantasyProsId": 26329,
+      "espnProjection": 0,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4360698": {
+      "espnId": 4360698,
+      "fantasyProsId": 25967,
+      "espnProjection": 0,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-3043234": {
+      "espnId": 3043234,
+      "fantasyProsId": 16548,
+      "espnProjection": 0,
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-4372758": {
+      "espnId": 4372758,
+      "fantasyProsId": 23049,
+      "espnProjection": 0,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4685279": {
+      "espnId": 4685279,
+      "fantasyProsId": 24344,
+      "espnProjection": 0,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4431562": {
+      "espnId": 4431562,
+      "fantasyProsId": 22928,
+      "espnProjection": 0,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4426535": {
+      "espnId": 4426535,
+      "fantasyProsId": 27222,
+      "espnProjection": 0,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4568024": {
+      "espnId": 4568024,
+      "fantasyProsId": 27444,
+      "espnProjection": 0,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-4257364": {
+      "espnId": 4257364,
+      "fantasyProsId": 25748,
+      "espnProjection": 0,
+      "scoringNote": "ESPN season stat line; otherPoints retains two-point, return and miscellaneous scoring."
+    },
+    "espn-5208518": {
+      "espnId": 5208518,
+      "fantasyProsId": 26444,
+      "espnProjection": 0,
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    },
+    "espn-4566158": {
+      "espnId": 4566158,
+      "fantasyProsId": 27798,
+      "espnProjection": 0,
+      "scoringNote": "Made FG yards × 0.1 + XP; ESPN remaining kicker adjustments retained."
+    }
+  },
+  "omitted": [
+    {
+      "name": "Eli Heidenreich",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jam Miller",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Anthony Richardson Sr.",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Robert Tonyan",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Ray-Ray McCloud III",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Cooper Rush",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Mason Rudolph",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Jeremy McNichols",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Tim Patrick",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Carson Wentz",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Andy Dalton",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Case Keenum",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Lil'Jordan Humphrey",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Gunner Olszewski",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Brandon Aiyuk",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "AJ Dillon",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Trey Sermon",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Elijah Moore",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Zach Wilson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jermar Jefferson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Brevin Jordan",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Tylan Wallace",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Kylen Granson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Simi Fehoko",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Sam Ehlinger",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Feleipe Franks",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "D.J. Montgomery",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "David Sills V",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "John Metchie III",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Calvin Austin III",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Grant Calcaterra",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Cole Turner",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Ty Chandler",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Skylar Thompson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Chris Oladokun",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Brittain Brown",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Julius Chestnut",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Quintin Morris",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Ronnie Rivers",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Nikola Kalinic",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Roschon Johnson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Stetson Bennett IV",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Cameron Latu",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Justin Shorter",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Will Mallory",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Scott Matlock",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Aidan O'Connell",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Brayden Willis",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Julian Hill",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Irv Charles",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Ben Sims",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Jake Bobo",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Princeton Fant",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Brady Russell",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Ryan Miller",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Chris Blair",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Ricky Pearsall",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Tip Reiman",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Audric Estime",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jared Wiley",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jamari Thrash",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Johnny Wilson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Mason Tipton",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Colson Yankoff",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "David Martin-Robinson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "E.J. Jenkins",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jared Wayne",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Tyrell Shavers",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Chris Collier",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Jayden Higgins",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Dillon Gabriel",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jalen Milroe",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Gavin Bartholomew",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jordan Watkins",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Graham Mertz",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Thomas Fidone II",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Kurtis Rourke",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Caleb Lohner",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Moliki Matavao",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Robbie Ouzts",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Will Howard",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Corey Kiner",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Raheim Sanders",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Beaux Collins",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Brady Cook",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Carter Runyon",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Ben Yurosek",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Keleki Latu",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Nick Kallerup",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jackson Meeks",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Jacoby Jones",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jimmy Holiday",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Coleman Owen",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Dalevon Campbell",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jeshaun Jones",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Joe Royer",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "CJ Williams",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Kendrick Law",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jaren Kanak",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Deion Burks",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Taylen Green",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jack Endries",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Bauer Sharp",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Behren Morton",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Athan Kaliakmanis",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Garrett Nussmeier",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Cole Payton",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Dallen Bentley",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Camden Brown",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Montorie Foster Jr.",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jack Strand",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Haynes King",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Joe Fagnano",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "J. Michael Sturdivant",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jamal Agnew",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Chris Moore",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Noah Brown",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Brandon Powell",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Zach Pascal",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Trent Sherfield",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jordan Akins",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Nick Vannett",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "River Cracraft",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Justin Watson",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "C.J. Ham",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Russell Gage Jr.",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Trent Taylor",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "DeAndre Carter",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Eric Tomlinson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Anthony Firkser",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Alex Erickson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Cedrick Wilson Jr.",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Ross Dwelley",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Malik Turner",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Brandon Allen",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jeff Driskel",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Dare Ogunbowale",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "MyCole Pruitt",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "KhaDarel Hodge",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Taylor Heinicke",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Mike White",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Allen Lazard",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Phillip Dorsett II",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Hunter Renfrow",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Josh Reynolds",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "C.J. Uzomah",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Cordarrelle Patterson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Taysom Hill",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Marcedes Lewis",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Trayveon Williams",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Nick Mullens",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Trevor Siemian",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Ryan Griffin",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Brett Rypien",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Scotty Miller",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "John Kelly Jr.",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Easton Stick",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jeff Wilson Jr.",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Tim Boyle",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Raheem Mostert",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jordan Matthews",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Mecole Hardman Jr.",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Equanimeous St. Brown",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Travis Homer",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Austin Seibert",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Gerald Everett",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "David Moore",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Myles Gaskin",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Miles Sanders",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Hayden Hurst",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Nyheim Hines",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Parris Campbell",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Diontae Johnson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Irv Smith Jr.",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Greg Joseph",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Alexander Mattison",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Dante Pettis",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Joe Mixon",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Tyreek Hill",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Dalvin Cook",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Nick Chubb",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Will Dissly",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Chase Edmonds",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "JuJu Smith-Schuster",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "DJ Chark",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Mike Boone",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Curtis Samuel",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Zay Jones",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "D'Onta Foreman",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Kareem Hunt",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Michael Badgley",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Austin Ekeler",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Geoff Swaim",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Ezekiel Elliott",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Gus Edwards",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Mike Williams",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Tyler Boyd",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Younghoe Koo",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Marquez Valdes-Scantling",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jamaal Williams",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Tyler Lockett",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Chris Conley",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Amari Cooper",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Nelson Agholor",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Sterling Shepard",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jamison Crowder",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Robbie Chosen",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "DeAndre Hopkins",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Derek Carr",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Allen Robinson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Zach Ertz",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Justin Tucker",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Brandin Cooks",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jimmy Garoppolo",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Robert Woods",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Adam Thielen",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Teddy Bridgewater",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Dustin Hopkins",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Greg Zuerlein",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Russell Wilson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Matt Prater",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Josh Johnson",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Graham Gano",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Tyree Jackson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Steven Sims",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Deonte Harty",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "D'Ernest Johnson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Stephen Carlson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Khari Blasingame",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jakob Johnson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Pharaoh Brown",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Craig Reynolds",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Tom Kennedy",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Trenton Irwin",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Donald Parham Jr.",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Clyde Edwards-Helaire",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Cam Akers",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Ke'Shawn Vaughn",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Zack Moss",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Darrynton Evans",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Joshua Kelley",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Antonio Gibson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Laviska Shenault Jr.",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Tyler Johnson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "DeeJay Dallas",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Van Jefferson",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Josiah Deguara",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Harrison Bryant",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Albert Okwuegbunam Jr.",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Gabe Davis",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Quez Watkins",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Collin Johnson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "K.J. Osborn",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "James Proche II",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Stephen Sullivan",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Isaiah Hodgins",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Marquez Callaway",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "JaMycal Hasty",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "J.J. Taylor",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Salvon Ahmed",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "John Wolford",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Sean McKeon",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Trishton Jackson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Dan Chisena",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jonathan Ward",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Tony Jones Jr.",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Lawrence Cager",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Tony Brown",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Kristian Wilkerson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Matthew Wright",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Michael Carter",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Kadarius Toney",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Terrace Marshall Jr.",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Dee Eskridge",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Kyle Trask",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Dez Fitzpatrick",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Elijah Mitchell",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Gary Brightwell",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jaelon Darden",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Khalil Herbert",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Ihmir Smith-Marsette",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Avery Williams",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Zach Davidson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jaret Patterson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Kenny Yeboah",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jody Fortson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Cody White",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Parker Hesse",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Mitchell Wilcox",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Giovanni Ricci",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jack Stoll",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Shane Zylstra",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Michael Bandy",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Patrick Taylor Jr.",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Mason Kinsey",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Josh Johnson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Tyler Mabry",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Cody Thompson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Velus Jones Jr.",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Dameon Pierce",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Cade York",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Hassan Haskins",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Zamir White",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Desmond Ridder",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Tyrion Davis-Price",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "David Bell",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Danny Gray",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Erik Ezukanma",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Pierre Strong Jr.",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Keaontay Ingram",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Teagan Quitoriano",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "John FitzPatrick",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Michael Woods II",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Bailey Zappe",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Nick Muse",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "James Mitchell",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Montrell Washington",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Samori Toure",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Brandon Smith",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Justyn Ross",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Deven Thompkins",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "DJ Turner",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Tim Jones",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Peyton Hendershot",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jalen Virgil",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Tanner Conner",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Shane Buechele",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Kendric Pryor",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Raheem Blackshear",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Troy Hairston",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Britain Covey",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Andre Baccellia",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Austin Trammell",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Anthony Brown Jr.",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Lucas Krull",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Dennis Houston",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Brandon Johnson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Stone Smartt",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Maurice Alexander",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Deuce Vaughn",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jake Moody",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Zach Evans",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Will Levis",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Hendon Hooker",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Anders Carlson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jalin Hyatt",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Christopher Dunn",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Sean Clifford",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Charlie Jones",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Evan Hull",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Israel Abanikanda",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Eric Gray",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Lew Nichols",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Grant DuBose",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Tyler Scott",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Zack Kuntz",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Kenny McIntosh",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jake Haener",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Dorian Thompson-Robinson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Ronnie Bell",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Antoine Green",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jaren Hall",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Trey Palmer",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Clayton Tune",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Max Duggan",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "DeWayne McBride",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "A.T. Perry",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Colton Dowell",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Tanner Brown",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Deneric Prince",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jason Brownlee",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Mohamed Ibrahim",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Joseph Ngata",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jaleel McLaughlin",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Elijah Dotson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Rakim Jarrett",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Malik Heath",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Chase Cota",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Malik Cunningham",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Mitchell Tinsley",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Jake Browning",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Xavier Gipson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Elijah Cooks",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Kearis Jackson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Xazavian Valladay",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Ben VanSumeren",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Tucker Fisk",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Shedrick Jackson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Rodney Williams",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Tyler Goodson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jordan Mims",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Ellis Merriweather",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Henry Pearson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Travis Vokolek",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Owen Wright",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Terrell Bynum",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Nathan Rourke",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "SaRodorick Thompson Jr.",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Dylan Drummond",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Lucas Havrisik",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Jermaine Burton",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Ja'Lynn Polk",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Joshua Karty",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Jase McClellan",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Javon Baker",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Brenden Rice",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Anthony Gould",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Bub Means",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Casey Washington",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Cornelius Johnson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Ainias Smith",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Devin Culp",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Jha'Quan Jackson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Keilan Robinson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Tahj Washington",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Tejhaun Palmer",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jaheim Bell",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jordan Travis",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Devin Leary",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Michael Pratt",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Tanner McLachlan",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Louis Rees-Zammit",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Dante Miller",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Blake Watson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "John Stephens Jr.",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Dallin Holker",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Carson Steele",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Michael Wiley",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Bryce Ford-Wheaton",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Ramel Keyton",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Tyreik McAllister",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Xavier Weaver",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Brayden Narveson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Brenden Bates",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Cody Schrader",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Thomas Odukoya",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Sincere McCormick",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Terrell Jennings",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Aaron Shampklin",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Parker Romo",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Alex Bachman",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Bryce Oliver",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Kaden Davis",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "D.J. Williams",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Joshua Cephus",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Kendall Milton",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Carlos Washington Jr.",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Cam Grandy",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jalen Moreno-Cropper",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jaylen Johnson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Frank Gore Jr.",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Baylor Cupp",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jack Westover",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Anthony Miller",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "John Samuel Shenker",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jacob Kibodi",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jermaine Jackson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jude McAtamney",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "John Ross",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jarquez Hunter",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Tommy Mellott",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Kalel Mullings",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Luke Lachey",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Cam Miller",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Ricky White III",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Kaden Prather",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Damien Martinez",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Dominic Lovett",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Junior Bergen",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Nick Nash",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Xavier Restrepo",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Isaiah Neyor",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Donovan Edwards",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Caden Davis",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Chandler Brayboy",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Lan Larison",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Ja'Corey Brooks",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Nathan Carter",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Gage Larvadain",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Sal Cannella",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jakobie Keeney-James",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Dalen Cambre",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Treyton Welch",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "CJ Dippre",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Max Brosmer",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Kedon Slovis",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Zaire Mitchell-Paden",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Philip Rivers",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Hayden Rucci",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Amar Johnson",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Quentin Skinner",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Zach Horton",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Jacardia Wright",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Ulysses Bentley IV",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Drake Dabney",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Brennan Presley",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Adrian Martinez",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Lewis Bond",
+      "reason": "Nonpositive season projection and no consensus rank"
+    },
+    {
+      "name": "Anthony Smith",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Emmanuel Henderson Jr.",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "Michael Trigg",
+      "reason": "No published 2026 season projection"
+    },
+    {
+      "name": "AJ Henning",
+      "reason": "No published 2026 season projection"
+    }
+  ]
+}
